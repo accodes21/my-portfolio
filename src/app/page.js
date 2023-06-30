@@ -5,11 +5,13 @@ import Projects from '@/pages/Projects'
 
 export default function Home() {
   return (
-    <main className='h-full w-full'>
+    <>
       <Header/>
+    <main className='h-full w-full'>
       <Hero/>
       <About/>
       <Projects/>
     </main>
+    </>
   )
 }
