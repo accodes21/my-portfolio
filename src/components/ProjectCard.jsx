@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {BsGithub} from 'react-icons/bs'
 import Link from 'next/link'
 
-function ProjectCard({title, image}) {
+function ProjectCard({title, image, link}) {
   return (
     <div className='m-4'>
       <h2 className='text-xl font-bold mb-3'>{title}</h2>
@@ -11,7 +11,7 @@ function ProjectCard({title, image}) {
             <Image src={`/${image}`} alt='YouTube 2.0' width={600} height={540} className='thumbnail'/>
             <div className="faded">
                 <div className="title">
-                    <Link className='link' target="_blank" href="https://github.com/accodes21/YouTube-Clone">
+                    <Link className='link' target="_blank" href={`https://github.com/accodes21/${link}`}>
                         <BsGithub/>
                     </Link>
                 </div>
