@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function About() {
   return (
-    <section className='bg-black p-36'>
+    <section id='about' className='bg-black p-36'>
         <div className="container pl-16 pr-16">
             <div className="content1 grid items-center justify-center grid-cols-2">
                 <div className="img-side relative pr-4">
