@@ -26,6 +26,20 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #232323;
+  outline: 1px solid #323232;
+  border-radius: 5em;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
 .imag{
   width: 300px;
   height: 300px;
