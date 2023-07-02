@@ -3,13 +3,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {BsGithub, BsLinkedin, BsTwitter} from 'react-icons/bs'
 import SkillBadge from './SkillBadge'
+import {motion, AnimatePresence} from 'framer-motion'
+import { fadeAnimation, slideAnimation } from '@/app/framer'
 
 function Hero() {
   return (
-    <section className='bg-[#111]'>
+    <AnimatePresence> 
+    <motion.section className='bg-[#111]'>
         <div className="content1 flex items-center justify-center h-[35em]">
             <div className="hero flex items-center justify-center relative gap-40">
-                <div className="hero-text flex flex-col">
+                <motion.div {...slideAnimation('left')} className="hero-text flex flex-col">
                     <h1 className='text-[4.8rem] leading-4 mb-[2rem] font-serif font-extrabold'> <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-500'>AARYA</span> 
                     <br/> <br/> <br/> <br/> <br/>
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-600'>CHOPKAR</span></h1>
@@ -25,14 +28,15 @@ function Hero() {
                         <Link href={'https://twitter.com/aarya_chopkar'} target='_blank' className='text-3xl'><BsTwitter/></Link>
                         </li>
                     </ul>
-                </div>
-                <div className="image">
+                </motion.div>
+                <motion.div {...slideAnimation('right')} className="image">
                     <Image className='imag' src='/pf.png' width={300} height={300} alt='profile'/>
-                </div>
+                </motion.div>
             </div>
         </div>
         <SkillBadge/>
-    </section>
+    </motion.section>
+    </AnimatePresence>
   )
 }
 

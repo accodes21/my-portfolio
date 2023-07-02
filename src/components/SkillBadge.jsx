@@ -3,10 +3,13 @@ import { ImHtmlFive } from 'react-icons/im'
 import {FaReact, FaNodeJs, FaGitAlt} from 'react-icons/fa'
 import {SiCss3, SiJavascript, SiTailwindcss, SiNextdotjs, SiVite, SiFirebase, SiFigma, SiPython, SiC, SiCplusplus} from 'react-icons/si'
 import {TbBrandVscode} from 'react-icons/tb'
+import { motion,AnimatePresence } from 'framer-motion'
+import { slideAnimation } from '@/app/framer'
 
 function SkillBadge() {
   return (
-    <div className='flex pl-20 pr-20 pb-20 justify-center'>
+    <AnimatePresence>
+    <motion.div {...slideAnimation('up')} className='flex pl-20 pr-20 pb-20 justify-center'>
         <h2 className='text-[#f1cf29] font-bold text-3xl'>Tech Stack  |</h2>
         <ul className='flex'>
             <li className='ml-4 hover:text-[#f1cf29] transition-all'>
@@ -52,7 +55,8 @@ function SkillBadge() {
                 <SiCplusplus className='text-4xl'/>
             </li>
         </ul>
-    </div>
+    </motion.div>
+    </AnimatePresence>
   )
 }
 
