@@ -2,10 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import {BsGithub} from 'react-icons/bs'
 import Link from 'next/link'
+import { AnimatePresence, motion } from 'framer-motion'
+import { introHeaderVariants } from '@/app/framer'
 
 function ProjectCard({title, image, link}) {
   return (
-    <div className='m-4'>
+    <AnimatePresence>
+    <motion.div initial='hide' whileInView='show' exit='hide' variants={...introHeaderVariants('up')} className='m-4'>
       <h2 className='text-xl font-bold mb-3'>{title}</h2>
         <div className="content h-full w-full shadow-md shadow-[#585757]">
             <Image src={`/${image}`} alt='YouTube 2.0' width={600} height={540} className='thumbnail'/>
@@ -17,7 +20,8 @@ function ProjectCard({title, image, link}) {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
+    </AnimatePresence>
   )
 }
 
