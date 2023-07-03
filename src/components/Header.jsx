@@ -1,21 +1,19 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
 import {motion, AnimatePresence} from 'framer-motion'
-import { fadeAnimation, headContentAnimation } from '@/app/framer'
+import { introHeaderVariants, slideAnimation } from '@/app/framer'
 
 function Header() {
   return (
     <AnimatePresence>
-    <motion.header {...fadeAnimation} className='h-[4.5em] w-full shadow shadow-gray-600 p-5 sticky bg-black'>
-        <nav className='flex justify-between font-medium'>
-            <Image src={'/logo.png'} alt='Logo' width={95} height={95}/>
-            <ul {...headContentAnimation} className='flex justify-end pr-4 mr-12 text-lg'>
+    <motion.header {...slideAnimation('down')} className='w-full'>
+        <nav className='fixed z-10 cursor-pointer flex-row items-center  overflow-hidden rounded-full border px-1 py-4 shadow-xl backdrop-blur-sm backdrop-filter border-slate-800/100 bg-black bg-opacity-60 lg:left-1/2 lg:flex lg:-translate-x-1/2 lg:transform mt-6 top-8"'>
+            <motion.ul {...introHeaderVariants('left')} className='flex justify-end pr-4 text-lg'>
                 <Link href={'/'} className='ml-4 text-white hover:text-yellow-400 transition-all'>Home</Link>
                 <Link href={'#about'} className='ml-4 text-white hover:text-yellow-400 transition-all'>About</Link>
                 <Link href={'#projects'} scroll={false} className='ml-4 text-white hover:text-yellow-400 transition-all'>Projects</Link>
                 <Link href={'/'} className='ml-4 text-white hover:text-yellow-400 transition-all'>Contact</Link>
-            </ul>
+            </motion.ul>
         </nav>
     </motion.header>
     </AnimatePresence>
