@@ -2,6 +2,7 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/pages/About'
+import Contact from '@/pages/Contact';
 import Projects from '@/pages/Projects'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <Projects/>
+      <Contact/>
     </main>
     </>
   )
