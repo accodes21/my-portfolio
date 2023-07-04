@@ -16,6 +16,12 @@
   }
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -129,4 +135,26 @@ body::-webkit-scrollbar-track{
 
 .title:hover .link {
   transform: scale(1.2);
+}
+
+@media screen and (max-width:500px) {
+  *{
+    width: 100%;
+  }
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .social{
+    margin: 0;
+    justify-content: space-around;
+  }
+  .social li{
+    margin: 0;
+  }
+  nav{
+    justify-content: center;
+  }
+  section{
+    padding: 0;
+  }
 }

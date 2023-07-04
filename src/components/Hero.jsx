@@ -9,7 +9,7 @@ import { fadeAnimation, slideAnimation } from '@/app/framer'
 function Hero() {
   return (
     <AnimatePresence> 
-    <motion.section className='bg-[#111] h-[100vh]'>
+    <motion.section className='bg-[#111] h-[100vh] w-full'>
         <div className="content1 flex items-center justify-center h-[35em]">
             <div className="hero flex items-center justify-center relative gap-40">
                 <motion.div {...slideAnimation('left')} className="hero-text flex flex-col">
@@ -17,7 +17,7 @@ function Hero() {
                     <br/> <br/> <br/> <br/> <br/>
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-600'>CHOPKAR</span></h1>
                     <p className='text-[1.2rem] leading-4 text-center mt-4'>Hi, I'm a Front-end Developer who loves to create stuff.</p>
-                    <ul className='flex mt-6'>
+                    <ul className='social flex mt-6'>
                         <li className='hover:text-[#f1cf29] hover:rotate-12 transition-all'>
                             <Link href={'https://github.com/accodes21'} target='_blank' className='text-3xl'><BsGithub/></Link>
                         </li>
