@@ -6,7 +6,7 @@ import { introHeaderVariants } from '@/app/framer'
 function Projects() {
   return (
     <AnimatePresence>
-    <motion.section id='projects' className='bg-[#111] p-32'>
+    <motion.section id='projects' className='project bg-[#111] p-32'>
         <motion.h1 initial='hide' whileInView='show' exit='hide' variants={...introHeaderVariants('left')} className='text-[#f1cf29] font-bold text-2xl'>PROJECTS</motion.h1>
         <div className="box grid grid-cols-2 justify-center items-center">
           <ProjectCard title={'YouTube 2.0'} image={'yt.png'} link={'YouTube-Clone'}/>

@@ -30,6 +30,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    height: 100vh;
+    width: 100vw;
 }
 
 body::-webkit-scrollbar {
@@ -143,18 +145,85 @@ body::-webkit-scrollbar-track{
   }
   .hero{
     flex-direction: column-reverse;
+    gap: 4em;
+    margin-top: 11em;
   }
   .social{
     margin: 0;
     justify-content: space-around;
+    display: none;
   }
   .social li{
     margin: 0;
   }
+  header{
+    width: auto;
+  }
   nav{
+    width: auto;
+    margin-left: 3em;
+    display: flex;
     justify-content: center;
+    padding: 0;
   }
   section{
     padding: 0;
+    width: 100%;
+  }
+  .heading{
+    font-size: 3.4em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    line-height: 0.2em;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .skill-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 10em;
+  }
+  .heading2{
+    font-size: 1.8em;
+    margin-top: 3em;
+    width: 100%;
+    text-align: center;
+  }
+  .skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .about{
+    padding: 2em;
+    margin-top: 14em;
+  }
+  .about-container{
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0;
+  }
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .about-head,
+  .about-sub{
+    text-align: center;
+  }
+  .img-side{
+    padding: 0;
+  }
+  .project,
+  .contact{
+    padding: 2em;
+  }
+  .box{
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }

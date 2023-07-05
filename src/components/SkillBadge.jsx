@@ -9,9 +9,9 @@ import { slideAnimation } from '@/app/framer'
 function SkillBadge() {
   return (
     <AnimatePresence>
-    <motion.div {...slideAnimation('up')} className='flex pl-20 pr-20 pb-20 justify-center'>
-        <h2 className='text-[#f1cf29] font-bold text-3xl'>Tech Stack  |</h2>
-        <ul className='flex'>
+    <motion.div {...slideAnimation('up')} className='skill-container flex pl-20 pr-20 pb-20 justify-center'>
+        <h2 className='heading2 text-[#f1cf29] font-bold text-3xl'>Tech Stack  |</h2>
+        <ul className='skill flex'>
             <li className='ml-4 hover:text-[#f1cf29] transition-all'>
                 <ImHtmlFive className='text-4xl'/>
             </li>
