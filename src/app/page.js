@@ -1,4 +1,5 @@
 "use client";
+import Footer from '@/components/Footer';
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/pages/About'
@@ -14,6 +15,7 @@ export default function Home() {
       <About/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </main>
     </>
   )
