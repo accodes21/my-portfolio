@@ -22,7 +22,7 @@ function Contact() {
     <AnimatePresence>
     <motion.section id='contact' className='contact bg-[#000] p-32'>
         <motion.h1 initial='hide' whileInView='show' exit='hide' variants={...introHeaderVariants('left')} className='text-[#f1cf29] font-bold text-2xl'>CONTACT ME</motion.h1>
-        <div className="container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3">
+        <div className="contact-div container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3">
             <div className='container text-slate-800 md:px-12 relative'>
                 <div className='block rounded-xl mt-[-100px] bg-[#111] shadow-xl py-10 md:py-12 px-4 md:px-6'>
                     <div>
