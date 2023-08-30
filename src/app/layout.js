@@ -17,8 +17,12 @@ export default function RootLayout({ children }) {
         <meta property='og:description' content='Web Developer working on NextJS. Open Source buff who also loves python.' />
         <meta property='og:url' content='https://aaryachopkar.vercel.app/' />
         <meta property='og:type' content='website' />
-        <meta name="twitter:card" content="summary" />
         <meta property='og:image' content='https://github.com/accodes21/my-portfolio/blob/master/preview.png' />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property='twitter:title' content='Aarya Chopkar' />
+        <meta property='twitter:description' content='Web Developer working on NextJS. Open Source buff who also loves python.' />
+        <meta property='twitter:image' content='https://github.com/accodes21/my-portfolio/blob/master/preview.png' />
+        <meta property='twitter:url' content='https://aaryachopkar.vercel.app/' />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
