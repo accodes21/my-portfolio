@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import {BsGithub, BsLinkedin, BsTwitter} from 'react-icons/bs'
+import {BsGithub, BsLinkedin, BsTwitter, BsFillFileEarmarkPdfFill} from 'react-icons/bs'
 import SkillBadge from './SkillBadge'
 import {motion, AnimatePresence} from 'framer-motion'
 import { fadeAnimation, slideAnimation } from '@/app/framer'
@@ -26,6 +26,9 @@ function Hero() {
                         </li>
                         <li className='ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all'>
                         <Link href={'https://twitter.com/aarya_chopkar'} target='_blank' className='text-3xl'><BsTwitter/></Link>
+                        </li>
+                        <li className='ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all'>
+                        <Link href={'https://drive.google.com/file/d/1al8M5BEZgFvjwxrIxUP5yGQegAn8wkxo/view?usp=sharing'} target='_blank' className='text-3xl'><BsFillFileEarmarkPdfFill/></Link>
                         </li>
                     </ul>
                 </motion.div>
