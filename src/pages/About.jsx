@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion,AnimatePresence } from 'framer-motion'
 import { introHeaderVariants, introPictureVariants } from '@/app/framer'
 
-function About() {
+const About = () => {
   return (
     <AnimatePresence>
     <motion.section id='about' className='about bg-black p-36'>

@@ -3,7 +3,7 @@ import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { introHeaderVariants } from '@/app/framer'
 
-function Projects() {
+const Projects = () => {
   return (
     <AnimatePresence>
     <motion.section id='projects' className='project bg-[#111] p-32'>

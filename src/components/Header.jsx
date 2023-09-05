@@ -3,7 +3,7 @@ import React from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 import { introHeaderVariants, slideAnimation } from '@/app/framer'
 
-function Header() {
+const Header = () => {
   return (
     <AnimatePresence>
     <motion.header {...slideAnimation('down')} className='w-full'>

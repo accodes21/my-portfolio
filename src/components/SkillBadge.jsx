@@ -6,7 +6,7 @@ import {TbBrandVscode} from 'react-icons/tb'
 import { motion,AnimatePresence } from 'framer-motion'
 import { slideAnimation } from '@/app/framer'
 
-function SkillBadge() {
+const SkillBadge = () => {
   return (
     <AnimatePresence>
     <motion.div {...slideAnimation('up')} className='skill-container flex pl-20 pr-20 pb-20 justify-center'>

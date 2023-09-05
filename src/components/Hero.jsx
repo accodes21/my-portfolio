@@ -6,7 +6,7 @@ import SkillBadge from './SkillBadge'
 import {motion, AnimatePresence} from 'framer-motion'
 import { fadeAnimation, slideAnimation } from '@/app/framer'
 
-function Hero() {
+const Hero = () => {
   return (
     <AnimatePresence> 
     <motion.section className='bg-[#111] h-[100vh] w-full'>

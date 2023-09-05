@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { introHeaderVariants } from '@/app/framer'
 import emailjs from '@emailjs/browser';
 
-function Contact() {
+const Contact = () => {
     const form = useRef();
 
   const sendEmail = (e) => {

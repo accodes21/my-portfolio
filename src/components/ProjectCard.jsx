@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { introHeaderVariants } from '@/app/framer'
 
-function ProjectCard({title, image, link}) {
+const ProjectCard = ({title, image, link}) => {
   return (
     <AnimatePresence>
     <motion.div initial='hide' whileInView='show' exit='hide' variants={...introHeaderVariants('up')} className='card m-4'>
