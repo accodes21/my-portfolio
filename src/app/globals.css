@@ -135,7 +135,7 @@ body::-webkit-scrollbar-track{
   
 }
 
-.title:hover .link {
+.link:hover{
   transform: scale(1.2);
 }
 
