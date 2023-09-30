@@ -8,7 +8,7 @@ import { introHeaderVariants } from '@/app/framer'
 const ProjectCard = ({title, image, link, projectLink}) => {
   return (
     <AnimatePresence>
-    <motion.div initial='hide' whileInView='show' exit='hide' variants={...introHeaderVariants('up')} className='card m-4'>
+    <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('up')} className='card m-4'>
       <h2 className='text-xl font-bold mb-3'>{title}</h2>
         <div className="content h-full w-full shadow-md shadow-[#585757]">
             <Image src={`/${image}`} alt='YouTube 2.0' width={600} height={540} className='thumbnail'/>
