@@ -79,10 +79,11 @@ body::-webkit-scrollbar-track{
   position: relative;
   overflow: hidden;
   text-align: center;
+  border-radius: 10px;
 }
 
 .content .faded {
-  background-color: rgba(142, 142, 142, 0.5);
+  background-color: rgba(210, 206, 206, 0.5);
   position: absolute;
   top: 0;
   left: 0;
