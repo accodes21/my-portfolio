@@ -28,7 +28,7 @@ const Hero = () => {
                         <Link href={'https://twitter.com/aarya_chopkar'} target='_blank' className='text-3xl'><BsTwitter/></Link>
                         </li>
                         <li className='ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all'>
-                        <Link href={'https://drive.google.com/file/d/1GWw8zjGPIs24eU13-a2rll-gFGzZLnIf/view?usp=sharing'} target='_blank' className='text-3xl'><BsFillFileEarmarkPdfFill/></Link>
+                        <Link href={'https://drive.google.com/file/d/1CJqyJmhM2S6qwPNzN6EKza9c7_yf4YZD/view?usp=sharing'} target='_blank' className='text-3xl'><BsFillFileEarmarkPdfFill/></Link>
                         </li>
                     </ul>
                 </motion.div>
