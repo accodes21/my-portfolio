@@ -71,7 +71,6 @@ body::-webkit-scrollbar-track{
 
 .thumbnail{
   width: 100%;
-  border-radius: 10px;
 }
 
 .content {
@@ -79,7 +78,6 @@ body::-webkit-scrollbar-track{
   position: relative;
   overflow: hidden;
   text-align: center;
-  border-radius: 10px;
 }
 
 .content .faded {
@@ -97,7 +95,6 @@ body::-webkit-scrollbar-track{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .content:hover .faded {
