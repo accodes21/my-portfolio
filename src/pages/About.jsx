@@ -15,8 +15,8 @@ const About = () => {
                 </motion.div>
                 <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('right')} className="text-side pl-4">
                     <h2 className='about-head text-[#f1cf29] font-bold text-3xl font-sans'>ABOUT ME</h2>
-                    <h3 className='about-sub text-2xl mb-8'>Software Developer based in India</h3>
-                    <p className='text-xl text-gray-300'>As a Full-Stack Developer, I possess an impressive skills in JavaScript, ReactJS, Tailwind, and, NextJS. I design and maintain websites that offer a smooth user experience. My expertise lies in creating dynamic, engaging interfaces through writing clean code and utilizing modern development tools.
+                    <h3 className='about-sub text-2xl mb-6'>Software Developer based in India</h3>
+                    <p className='text-xl text-gray-300'>As a Full-Stack Developer, I have worked extensively on JavaScript, ReactJS, Tailwind, and, NextJS. I design and maintain websites that offer a smooth UI/UX. My expertise lies in creating dynamic, engaging websites by writing clean code and using modern development tools.
                     <br />
                     As an <Link href={'https://mvp.microsoft.com/en-US/studentambassadors/profile/d3da8b9c-5bf5-4532-a54f-65ef45536e13'} target='_blank' className='underline hover:text-[#f1cf29]'>Microsoft Learn Student Ambassador</Link>, I have guided several students for starting their web-development journey. Also as Associate Tech Lead at <Link href={'https://gdsc.community.dev/shri-mata-vaishno-devi-university-katra/'} target='_blank' className='underline hover:text-[#f1cf29]'>GDSC SMVDU</Link>, I have hosted several tech events in my university.
                     <br />
