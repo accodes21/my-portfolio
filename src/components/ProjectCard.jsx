@@ -22,7 +22,7 @@ const ProjectCard = ({title, image, link, projectLink}) => {
     <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('up')} className='card m-4 rounded-xl'>
       <h2 className='text-xl font-bold mb-3'>{title}</h2>
         <div className="content h-full w-full rounded-xl md:rounded-3xl">
-            <Image src={`/${image}`} alt='YouTube 2.0' width={500} height={440} className='thumbnail rounded-xl md:rounded-3xl'/>
+            <Image src={`/${image}`} alt={title} width={500} height={440} className='thumbnail rounded-xl md:rounded-3xl'/>
             <div className="faded">
                 <div className="title flex md:flex-row flex-col gap-2">
                     <Link className='link' target="_blank" href={`https://github.com/accodes21/${link}`}>
