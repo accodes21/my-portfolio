@@ -7,10 +7,11 @@ const Projects = () => {
   return (
     <AnimatePresence>
     <motion.section id='projects' className='project bg-[#111] p-32'>
-        <motion.h1 initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')} className='text-[#f1cf29] font-bold text-2xl'>PROJECTS</motion.h1>
-        <div className="box grid grid-cols-2 justify-center items-center">
-          <ProjectCard title={'YouTube 2.0'} image={'yt.png'} link={'YouTube-Clone'} projectLink={'https://youtube-clone-accodes21.vercel.app/'}/>
+        <motion.h1 initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')} className='text-[#f1cf29] font-bold text-3xl font-sans'>PROJECTS</motion.h1>
+        <div 
+          className="box grid grid-cols-2 justify-center items-center">
           <ProjectCard title={'3D Tshirt Designer'} image={'tshirt.png'} link={'tshirt3d'} projectLink={'https://tshirt3d.vercel.app/'}/>
+          <ProjectCard title={'YouTube 2.0'} image={'yt.png'} link={'YouTube-Clone'} projectLink={'https://youtube-clone-accodes21.vercel.app/'}/>
           <ProjectCard title={'Movie-Mania'} image={'movie-mania.png'} link={'Movie-Mania'} projectLink={'https://movie-app-bice-ten.vercel.app/'}/>
           <ProjectCard title={'Meme Generator'} image={'meme.png'} link={'Meme_Generator'} projectLink={'https://meme-generator-accodes21.vercel.app/'}/>
           <ProjectCard title={'Tenzies Game'} image={'tenzies.png'} link={'Tenzies-Game'} projectLink={'https://tenzies-game-neon.vercel.app/'}/>
