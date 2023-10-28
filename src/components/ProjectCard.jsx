@@ -17,7 +17,7 @@ const ProjectCard = ({title, image, link, projectLink}) => {
       perspective={1000}
       transitionSpeed={1000}
       transitionEasing="cubic-bezier(0.19, 1.0, 0.22, 1.0)"
-      className='p-0 rounded-xl overflow-hidden'
+      className='rounded-xl'
     >
     <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('up')} className='card m-4 rounded-xl'>
       <h2 className='text-xl font-bold mb-3'>{title}</h2>
