@@ -19,16 +19,16 @@ const Hero = () => {
                     <p className='text-[1.2rem] leading-4 text-center mt-4 italic'>Hi, I'm a Software Developer who loves to create stuff.</p>
                     <ul className='social flex mt-6'>
                         <li className='hover:text-[#f1cf29] hover:rotate-12 transition-all'>
-                            <Link href={'https://github.com/accodes21'} target='_blank' className='text-3xl'><BsGithub/></Link>
+                            <Link href={'https://github.com/accodes21'} target='_blank' title='GitHub' className='text-3xl'><BsGithub/></Link>
                         </li>
                         <li className='ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all'>
-                            <Link href={'https://www.linkedin.com/in/aarya-chopkar-581aa2228'} target='_blank' className='text-3xl'><BsLinkedin/></Link>
+                            <Link href={'https://www.linkedin.com/in/aarya-chopkar-581aa2228'} target='_blank' title='LinkedIn' className='text-3xl'><BsLinkedin/></Link>
                         </li>
                         <li className='ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all'>
-                        <Link href={'https://twitter.com/aarya_chopkar'} target='_blank' className='text-3xl'><BsTwitter/></Link>
+                        <Link href={'https://twitter.com/aarya_chopkar'} target='_blank' title='Twitter' className='text-3xl'><BsTwitter/></Link>
                         </li>
                         <li className='ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all'>
-                        <Link href={'https://drive.google.com/file/d/1CJqyJmhM2S6qwPNzN6EKza9c7_yf4YZD/view?usp=sharing'} target='_blank' className='text-3xl'><BsFillFileEarmarkPdfFill/></Link>
+                        <Link href={'https://drive.google.com/file/d/1CJqyJmhM2S6qwPNzN6EKza9c7_yf4YZD/view?usp=sharing'} target='_blank' title='Resume' className='text-3xl'><BsFillFileEarmarkPdfFill/></Link>
                         </li>
                     </ul>
                 </motion.div>
