@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <AnimatePresence>
     <motion.footer {...slideAnimation('up')} className='w-full text-center bg-[#111]'>
-        <p className='py-2'>Copyright &copy; Aarya Chopkar</p>
+        <p className='py-2'>Copyright &copy; Aarya Chopkar 2023</p>
     </motion.footer>
     </AnimatePresence>
   )
