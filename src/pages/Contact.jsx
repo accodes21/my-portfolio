@@ -39,7 +39,10 @@ const Contact = () => {
                             <div className="mb-6">
                                 <textarea name="message" className='form-control block w-full px-3 py-1.5 text-base font-normal text-zinc-200 bg-gray-800  bg-clip-padding border border-solid border-zinc-500 rounded transition ease-in-out m-0 focus:text-zinc-200 focus:bg-slate-600 focus:border-yellow-500 focus:outline-none' id="message" cols="8" rows="6" placeholder='Write a Message...' autoComplete='off' required></textarea>
                             </div>
-                            <input type="submit" value={submitted ? "Thank You" : "Send"} disabled={submitted} className=" w-auto px-6 py-2.5 bg-[#333] rounded-md text-[#f1cf29] font-medium text-sm leading-snug uppercase shadow-md hover:bg-[#f1cf29] hover:text-[#222] hover:shadow-lg focus:shadow-lg focus:outline-none cursor-pointer focus:ring-0 active:bg-[#f1cf29] active:shadow-lg transition-all"/>
+                            <motion.input type="submit" value={submitted ? "Thank You" : "Send"} disabled={submitted} className=" w-auto px-6 py-2.5 bg-[#333] rounded-md text-[#f1cf29] font-medium text-sm leading-snug uppercase shadow-md hover:bg-[#f1cf29] hover:text-[#222] hover:shadow-lg focus:shadow-lg focus:outline-none cursor-pointer focus:ring-0 active:bg-[#f1cf29] active:shadow-lg transition-all"
+                            whileTap={{ scale: 0.7 }}
+                            transition={{ type: "spring", stiffness: 50, damping: 6 }}
+                            />
                         </motion.form>
                     </div>
                 </div>
