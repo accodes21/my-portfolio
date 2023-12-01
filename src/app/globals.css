@@ -48,6 +48,10 @@ body::-webkit-scrollbar-track{
   background-color: transparent;
 }
 
+.loader{
+  height: calc(100vh + 200px);
+}
+
 .imag{
   width: 300px;
   height: 300px;

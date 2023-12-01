@@ -11,15 +11,15 @@ export default function Home() {
 
   const loader = useRef(null);
   const path = useRef(null);
-  const initialCurve = 200;
-  const duration = 300;
+  const initialCurve = 250;
+  const duration = 270;
   let start;
 
   useEffect(() => {
     setPath(initialCurve)
     setTimeout( () => {
       requestAnimationFrame(animate)
-    }, 100)
+    }, 300)
   },[])
 
   const animate = (timestamp) => {
@@ -57,9 +57,9 @@ export default function Home() {
 
   return (
     <>
-      <div ref={loader} className="h-[110vh] w-full fixed z-10">
+      <div ref={loader} className="loader w-full fixed z-10">
         <svg className='h-full w-full'>
-          <path ref={path} className='stroke-[#f1cf29] stroke-1 fill-[#111]'></path>
+          <path ref={path} className='stroke-[#f1cf29] stroke-1 fill-[#f1cf29]'></path>
         </svg>
       </div>
       <Header/>
