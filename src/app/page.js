@@ -12,14 +12,14 @@ export default function Home() {
   const loader = useRef(null);
   const path = useRef(null);
   const initialCurve = 250;
-  const duration = 270;
+  const duration = 300;
   let start;
 
   useEffect(() => {
     setPath(initialCurve)
     setTimeout( () => {
       requestAnimationFrame(animate)
-    }, 300)
+    }, 105)
   },[])
 
   const animate = (timestamp) => {
