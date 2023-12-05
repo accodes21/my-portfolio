@@ -19,7 +19,7 @@ export default function Home() {
     setPath(initialCurve)
     setTimeout( () => {
       requestAnimationFrame(animate)
-    }, 105)
+    }, 115)
   },[])
 
   const animate = (timestamp) => {
