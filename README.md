@@ -9,3 +9,6 @@ https://github.com/accodes21/my-portfolio/assets/101868279/3b7bbece-9abe-4981-8d
 - NextJS🔥
 - Tailwind CSS✨
 - Framer Motion🚀
+
+## Layout
+[Layout](layout.png)
