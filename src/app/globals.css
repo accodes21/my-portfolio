@@ -154,7 +154,7 @@ body::-webkit-scrollbar-track{
   }
   .hero{
     flex-direction: column-reverse;
-    gap: 4em;
+    gap: 1.2em;
     margin-top: 5em;
   }
   .social{
