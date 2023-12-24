@@ -19,9 +19,9 @@ const Projects = () => {
           <ProjectCard title={'Sherlock Holmes Landing Page'} image={'sherlock.png'} link={'Sherlock_Landing_Page'} projectLink={'https://accodes21.github.io/Sherlock_Landing_Page/'} skills={'CSS, JavaScript'}/>
           <ProjectCard title={'Firebase ChatApp'} image={'chatapp.png'} link={'basic_chatapp'} projectLink={'https://basic-chatapp.vercel.app/'} skills={'ReactJS, Firebase, Tailwind CSS'}/>
         </div>
-        <div className='text-center mt-6'>
+        <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('up')} className='text-center mt-6'>
           <Link href={"https://github.com/accodes21?tab=repositories"} target='_blank' className='text-center lg:text-lg text-sm p-4 bg-black rounded-full border border-[#f1cf29]/60 hover:bg-gradient-to-r from-yellow-400 to-orange-500 hover:text-black transition-all'>More Projects</Link>
-        </div>
+        </motion.div>
     </motion.section>
     </AnimatePresence>
   )
