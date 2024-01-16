@@ -24,7 +24,10 @@ const Contact = () => {
   return (
     <AnimatePresence>
     <motion.section id='contact' className='contact bg-[#000] p-32'>
-        <motion.h1 initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')} className='text-[#f1cf29] font-bold font-sans text-3xl'>CONTACT ME</motion.h1>
+        <motion.div  initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')}>
+            <h1 className='text-[#f1cf29] font-bold font-sans text-3xl mb-6'>CONTACT ME</h1>
+            <h1 className='text-xl mb-6'>Let's collaborate and make creative products.</h1>
+        </motion.div>
         <div className="contact-div container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3">
             <div className='container text-slate-800 md:px-12 relative'>
                 <div className='block rounded-xl mt-[-100px] bg-[#111] shadow-xl py-10 md:py-12 px-4 md:px-6'>

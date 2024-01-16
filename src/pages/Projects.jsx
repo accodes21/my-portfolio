@@ -8,7 +8,10 @@ const Projects = () => {
   return (
     <AnimatePresence>
     <motion.section id='projects' className='project bg-[#111] p-32'>
-        <motion.h1 initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')} className='text-[#f1cf29] mb-6 font-bold text-3xl font-sans'>PROJECTS</motion.h1>
+      <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')}>
+        <h1 className='text-[#f1cf29] mb-6 font-bold text-3xl font-sans'>PROJECTS</h1>
+        <h1 className='text-xl mb-6'>Creative projects which helped me mastering web-development.</h1>
+      </motion.div>
         <div 
           className="box grid grid-cols-2 justify-center items-center gap-8">
           <ProjectCard title={'3D Tshirt Designer'} image={'tshirt3d.png'} link={'tshirt3d'} projectLink={'https://tshirt3d.vercel.app/'} skills={'ReactJS, ThreeJS, Tailwind CSS, OpenAI'}/>
