@@ -11,7 +11,7 @@ const About = () => {
         <div className="container about-container pl-16 pr-16">
             <div className="content1 about-content grid items-center justify-center grid-cols-2">
                 <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')} className="img-side relative pr-4">
-                    <Image className='rounded-3xl' width={560} height={480} src='/gif.gif' alt='Developer'/>
+                    <Image className='rounded-3xl' width={560} height={480} src='/aarya.jpg' alt='Developer'/>
                 </motion.div>
                 <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('right')} className="text-side pl-4">
                     <h2 className='about-head text-[#f1cf29] font-bold text-3xl font-sans'>ABOUT ME</h2>
