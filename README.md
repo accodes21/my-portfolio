@@ -11,5 +11,6 @@ https://github.com/accodes21/my-portfolio/assets/101868279/3b7bbece-9abe-4981-8d
 - Framer Motion🚀
 
 ## Layout
-![aaryachopkar vercel app_](https://github.com/accodes21/my-portfolio/assets/101868279/bc008df3-2499-41c2-b24b-ee67bd1d379a)
+![aaryachopkar vercel app_ (1)](https://github.com/accodes21/my-portfolio/assets/101868279/12dea6dd-9102-429d-80b8-51c9f028e33d)
+
 
