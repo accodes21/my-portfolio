@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
         <meta property='twitter:image' content='https://raw.githubusercontent.com/accodes21/my-portfolio/master/preview.png' />
         <meta property='twitter:url' content='https://aaryachopkar.vercel.app/' />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children} <Analytics /></body>
     </html>
   )
 }
