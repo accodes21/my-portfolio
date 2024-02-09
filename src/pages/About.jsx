@@ -14,7 +14,7 @@ const About = () => {
                     <Image className='rounded-3xl mt-2 rotate-12 z-0 absolute opacity-60' width={560} height={480} src='/aarya.jpg' alt='Developer'/>
                     <Image className='rounded-3xl z-10 relative shadow-md shadow-black' width={560} height={480} src='/aarya.jpg' alt='My profile photo'/>
                 </motion.div>
-                <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('right')} className="text-side pl-10">
+                <motion.div initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('right')} className="text-side lg:pl-10">
                     <h2 className='about-head text-[#f1cf29] font-bold text-3xl font-sans'>ABOUT ME</h2>
                     <h3 className='about-sub text-2xl mb-6'>Software Developer based in India</h3>
                     <p className='text-xl text-gray-300'>As a <span className='font-semibold underline decoration-[#f1cf29] decoration-2'>Full-Stack Developer</span>, I have worked extensively on JavaScript, ReactJS, Tailwind, and, NextJS. I create websites with seamless UI/UX, specializing in dynamic, engaging design through clean coding and modern development tools.
