@@ -29,7 +29,7 @@ const Hero = () => {
                             <Link href={'https://twitter.com/ChopkarAarya'} target='_blank' title='Twitter' className=' text-4xl'>𝕏</Link>
                             </li>
                         </ul>
-                            <Link href={"https://drive.google.com/file/d/1CJqyJmhM2S6qwPNzN6EKza9c7_yf4YZD/view?usp=sharing"} target='_blank' className=' w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 hover:scale-95 rounded-full transition-all'><span className='flex flex-col justify-between bg-[#111] text-white hover:bg-transparent hover:text-[#222] rounded-full p-4 transition-all'>Check Resume</span></Link>
+                            <Link href={"https://drive.google.com/file/d/1CJqyJmhM2S6qwPNzN6EKza9c7_yf4YZD/view?usp=sharing"} target='_blank' className=' w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 hover:scale-95 rounded-full transition-all'><span className='flex flex-col justify-between bg-[#111] text-white hover:bg-transparent hover:text-[#222] rounded-full p-4 transition-all'>My Resume</span></Link>
                     </div>
                 </motion.div>
                 <motion.div {...slideAnimation('right')} className="image">
