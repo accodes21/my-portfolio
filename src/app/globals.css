@@ -156,7 +156,7 @@ body::-webkit-scrollbar-track{
   .hero{
     flex-direction: column-reverse;
     gap: 1.2em;
-    margin-top: 5em;
+    margin-top: 10em;
   }
   .social{
     margin-top: 1em ;
@@ -184,6 +184,7 @@ body::-webkit-scrollbar-track{
   .heading{
     font-size: 3.4em;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
     text-align: center;
     line-height: 0.2em;
   }
@@ -196,7 +197,7 @@ body::-webkit-scrollbar-track{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    /* margin-bottom: 10em; */
+    margin-top: 3em;
   }
   .heading2{
     font-size: 1.8em;
@@ -213,11 +214,9 @@ body::-webkit-scrollbar-track{
   } 
   .about{
     padding: 2em;
-    margin-top: 4em;
+    margin-top: 2em;
   }
   .about-container{
-    /* display: flex; */
-    /* flex-direction: column; */
     padding: 0;
   }
   .about-content{
@@ -245,23 +244,5 @@ body::-webkit-scrollbar-track{
   }
   .contact-div{
     margin-top: 8em;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .about{
-    margin-top: 4em;
-  }
-}
-
-@media screen and (max-width:380px) {
-  .about{
-    margin-top: 10em;
-  }
-}
-
-@media screen and (max-width:340px) {
-  .about{
-    margin-top: 12em;
   }
 }

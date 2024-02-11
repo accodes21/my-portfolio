@@ -9,7 +9,7 @@ import { slideAnimation } from '@/app/framer'
 const Hero = () => {
   return (
     <AnimatePresence> 
-    <motion.section className='bg-[#111] h-[100vh] w-full'>
+    <motion.section className='bg-[#111] h-fit w-full'>
         <div className="content1 flex items-center justify-center h-[35em]">
             <div className="hero flex items-center justify-center relative gap-40">
                 <motion.div {...slideAnimation('left')} className="hero-text flex flex-col">
@@ -37,7 +37,9 @@ const Hero = () => {
                 </motion.div>
             </div>
         </div>
+        <div className='h-full'>
         <SkillBadge/>
+        </div>
     </motion.section>
     </AnimatePresence>
   )

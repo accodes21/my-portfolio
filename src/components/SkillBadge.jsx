@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImHtmlFive } from 'react-icons/im'
-import {FaReact, FaNodeJs, FaGitAlt} from 'react-icons/fa'
-import {SiCss3, SiJavascript, SiTailwindcss, SiNextdotjs, SiVite, SiFirebase, SiFigma, SiPython, SiC, SiCplusplus} from 'react-icons/si'
+import {FaReact, FaNodeJs, FaJava} from 'react-icons/fa'
+import {SiCss3, SiJavascript, SiTailwindcss, SiNextdotjs, SiVite, SiFirebase, SiFigma, SiPython, SiCplusplus} from 'react-icons/si'
 import {TbBrandVscode} from 'react-icons/tb'
 import { motion,AnimatePresence } from 'framer-motion'
 import { slideAnimation } from '@/app/framer'
@@ -39,14 +39,8 @@ const SkillBadge = () => {
             <li className='ml-4 hover:text-[#30f129] transition-all'>
                 <FaNodeJs className='text-4xl'/>
             </li>
-            <li className='ml-4 hover:text-[#e429f1] transition-all'>
-                <SiFigma className='text-4xl'/>
-            </li>
             <li className='ml-4 hover:text-[#f18329] transition-all'>
-                <FaGitAlt className='text-4xl'/>
-            </li>
-            <li className='ml-4 hover:text-[#29a8f1] transition-all'>
-                <TbBrandVscode className='text-4xl'/>
+                <FaJava className='text-4xl'/>
             </li>
             <li className='ml-4 hover:text-[#f1cf29] transition-all'>
                 <SiPython className='text-4xl'/>
