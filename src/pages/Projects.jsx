@@ -27,6 +27,8 @@ const Projects = () => {
           <Link href={"https://github.com/accodes21?tab=repositories"} target='_blank' className='text-center lg:text-lg text-sm p-4 bg-black rounded-full border border-[#f1cf29]/60 hover:bg-gradient-to-r from-yellow-400 to-orange-500 hover:text-black transition-all'>More Projects</Link>
         </motion.div>
     </motion.section>
+    <motion.hr initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')}
+        class="h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-25 dark:opacity-100" />
     </AnimatePresence>
   )
 }

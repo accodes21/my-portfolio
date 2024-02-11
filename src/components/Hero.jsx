@@ -4,7 +4,7 @@ import Link from 'next/link'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 import SkillBadge from './SkillBadge'
 import {motion, AnimatePresence} from 'framer-motion'
-import { slideAnimation } from '@/app/framer'
+import { slideAnimation, introHeaderVariants } from '@/app/framer'
 
 const Hero = () => {
   return (
@@ -38,8 +38,10 @@ const Hero = () => {
             </div>
         </div>
         <div className='h-full'>
-        <SkillBadge/>
-        </div>
+            <SkillBadge/>
+        </div> 
+        <motion.hr initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')}
+        class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-25 dark:opacity-100" />
     </motion.section>
     </AnimatePresence>
   )

@@ -27,6 +27,8 @@ const About = () => {
             </div>
         </div>
     </motion.section>
+    <motion.hr initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')}
+        class="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-25 dark:opacity-100" />
     </AnimatePresence>
   )
 }
