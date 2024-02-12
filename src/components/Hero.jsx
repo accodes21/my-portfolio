@@ -41,7 +41,7 @@ const Hero = () => {
             <SkillBadge/>
         </div> 
         <motion.hr initial="hide" whileInView="show" viewport={{ once: true }} variants={...introHeaderVariants('left')}
-        class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-25 dark:opacity-100" />
+        className="lg:h-px h-[1.8px] border-t-0 bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-100" />
     </motion.section>
     </AnimatePresence>
   )
