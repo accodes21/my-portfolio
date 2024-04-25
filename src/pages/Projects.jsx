@@ -18,7 +18,7 @@ const Projects = () => {
 
           <ProjectCard  title={'YouTube 2.0'} image={'yt.png'} link={'YouTube-Clone'} projectLink={'https://youtube-clone-accodes21.vercel.app/'} skills={'ReactJS, Material UI, YouTube-API'}/>
 
-          <ProjectCard  title={'Movie-Mania'} image={'movie-mania.png'} link={'Movie-Mania'} projectLink={'https://movie-mania-kdeg7szz9-accodes21s-projects.vercel.app/'} skills={'ReactJS, Material UI, TMDB API'}/>
+          <ProjectCard  title={'Movie-Mania'} image={'movie-mania.png'} link={'Movie-Mania'} projectLink={'https://movie-app-bice-ten.vercel.app/'} skills={'ReactJS, Material UI, TMDB API'}/>
 
           <ProjectCard title={'Meme Generator'} image={'meme.png'} link={'Meme_Generator'} projectLink={'https://meme-generator-accodes21.vercel.app/'} skills={'ReactJS, CSS, Meme API'}/>
 
