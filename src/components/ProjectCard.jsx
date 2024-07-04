@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { introHeaderVariants } from '@/app/framer'
 import Tilt from 'react-parallax-tilt'
 
-const ProjectCard = ({ title, image, link, projectLink, skills }) => {
+const ProjectCard = ({ title, image, link, githubLink, skills }) => {
   return (
     <AnimatePresence>
       <Tilt
@@ -29,7 +29,7 @@ const ProjectCard = ({ title, image, link, projectLink, skills }) => {
                 <Link className='link' target="_blank" href={`https://github.com/accodes21/${link}`}>
                   <BsGithub />
                 </Link>
-                <Link className='link' target='_blank' href={`${projectLink}`}>
+                <Link className='link' target='_blank' href={`${githubLink}`}>
                   <BsLink />
                 </Link>
               </div>
