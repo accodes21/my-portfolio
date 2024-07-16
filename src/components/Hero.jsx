@@ -16,7 +16,7 @@ const Hero = () => {
                             <h1 className=' heading text-[4.8rem] leading-4 mb-[2rem] font-serif font-extrabold'> <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-500'>AARYA</span>
                                 <br /> <br /> <br /> <br /> <br />
                                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-600'>CHOPKAR</span></h1>
-                            <p className='text-[1.2rem] leading-4 text-center mt-4 italic'>Hi, I'm a <span className='font-semibold'>Software Developer</span> who loves to create stuff.</p>
+                            <p className='text-[1.2rem] leading-4 text-center mt-4'>Hi, I'm a <span className='font-semibold'>Software Developer</span> who loves to create stuff.</p>
                             <div className='flex flex-col'>
                                 <ul className='social flex items-center mt-6 mb-4'>
                                     <li className='hover:text-[#f1cf29] hover:rotate-12 transition-all'>
