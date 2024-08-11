@@ -1,10 +1,20 @@
 "use client";
-import React from "react";
-import Sketch from "react-p5";
+
+import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
+  ssr: false,
+});
 
 export default function FractalTree() {
   let slider;
   let angle = 0;
+
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const setup = (p5, canvasParentRef) => {
     p5.createCanvas(300, 300).parent(canvasParentRef);
@@ -38,6 +48,8 @@ export default function FractalTree() {
       p5.pop();
     }
   }
+
+  if (!isClient) return null;
 
   return <Sketch setup={setup} draw={draw} />;
 }

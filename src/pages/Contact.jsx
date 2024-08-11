@@ -2,7 +2,11 @@ import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { introHeaderVariants } from "@/app/framer";
 import emailjs from "@emailjs/browser";
-import FractalTree from "@/components/FractalTree";
+import dynamic from "next/dynamic";
+
+const FractalTree = dynamic(() => import("@/components/FractalTree"), {
+  ssr: false, // This disables server-side rendering for this component
+});
 
 const Contact = () => {
   const form = useRef();
