@@ -35,8 +35,8 @@ export default function Cardioid() {
   const draw = (p5) => {
     p5.background(0);
     const total = 200;
-    factor += 0.007;
-    if (factor >= 10) {
+    factor += 0.006;
+    if (factor >= 14) {
       factor = 0;
     }
 
