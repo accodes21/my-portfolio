@@ -35,7 +35,10 @@ export default function Cardioid() {
   const draw = (p5) => {
     p5.background(0);
     const total = 200;
-    factor += 0.005;
+    factor += 0.007;
+    if (factor >= 10) {
+      factor = 0;
+    }
 
     p5.translate(p5.width / 2, p5.height / 2);
     p5.stroke(255, 150);

@@ -23,7 +23,7 @@ export default function FractalTree() {
   };
 
   const draw = (p5) => {
-    p5.background(6);
+    p5.background(0);
     let x = p5.map(p5.sin(angle), -1, 1, 0, 255);
     if (slider) {
       slider.value(x);

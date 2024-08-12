@@ -46,7 +46,9 @@ export default function P5Project() {
       onClick={handleChoiceChange}
     >
       {loading ? (
-        <div className="text-xl text-center w-[300px]">Loading...</div>
+        <div className="text-xl flex justify-center items-center w-[300px] h-[300px]">
+          Loading...
+        </div>
       ) : (
         components[choice]
       )}
