@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/components/Footer";
-import FractalTree from "@/components/FractalTree";
+import FractalTree from "@/components/p5projects/FractalTree";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/pages/About";

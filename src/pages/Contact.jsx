@@ -2,11 +2,7 @@ import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { introHeaderVariants } from "@/app/framer";
 import emailjs from "@emailjs/browser";
-import dynamic from "next/dynamic";
-
-const FractalTree = dynamic(() => import("@/components/FractalTree"), {
-  ssr: false, // This disables server-side rendering for this component
-});
+import P5Project from "@/components/P5";
 
 const Contact = () => {
   const form = useRef();
@@ -52,7 +48,7 @@ const Contact = () => {
           </h1>
         </motion.div>
         <div className="flex flex-col justify-center items-center md:flex-row gap-4">
-          <FractalTree />
+          <P5Project />
           <div className="contact-div container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3">
             <div className="container text-slate-800 md:px-12 relative">
               <div className="block rounded-xl mt-[-100px] bg-[#111] border border-solid border-[#f1cf29]/60  py-10 md:py-12 px-4 md:px-6">
