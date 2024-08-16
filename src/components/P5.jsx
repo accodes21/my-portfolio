@@ -16,6 +16,9 @@ const Phyllotaxis = dynamic(
 const Cardioid = dynamic(() => import("@/components/p5projects/Cardioid"), {
   ssr: false,
 });
+const Pendulum = dynamic(() => import("@/components/p5projects/Pendulum"), {
+  ssr: false,
+});
 
 export default function P5Project() {
   const [choice, setChoice] = useState(0);
@@ -25,15 +28,11 @@ export default function P5Project() {
     <FractalTree key="fractal" />,
     <Phyllotaxis key="phyllotaxis" />,
     <Cardioid key="cardioid" />,
+    <Pendulum key="pendulum" />,
   ];
   const handleChoiceChange = () => {
     setLoading(true);
-    let newChoice;
-    do {
-      newChoice = Math.floor(Math.random() * components.length);
-    } while (newChoice === choice);
-
-    setChoice(newChoice);
+    const newChoice = (choice + 1) % components.length;
 
     setTimeout(() => {
       setChoice(newChoice);
