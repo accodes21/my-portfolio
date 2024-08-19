@@ -37,7 +37,7 @@ export const fadeAnimation = {
   },
 };
 
- export const introHeaderVariants = (direction) => {
+export const introHeaderVariants = (direction) => {
   return {
     hide: {
       opacity: 0,
@@ -47,12 +47,12 @@ export const fadeAnimation = {
     show: {
       opacity: 1,
       x: 0,
-      y:0,
+      y: 0,
       transition: {
         ...transition,
-        duration:0.7,
-        delay:0.2
+        duration: 0.7,
+        delay: 0.2,
       },
     },
   };
-}
+};
