@@ -72,44 +72,10 @@ const Hero = () => {
                 Hi, I'm a Software Developer who brings ideas to life.
               </p>
               <div className="flex flex-col">
-                {/* <ul className="social flex items-center mt-6 mb-4"> */}
                 <SocialLinks />
-                {/* <li className="hover:text-[#f1cf29] hover:rotate-12 transition-all">
-                      <Link
-                        href={"https://github.com/accodes21"}
-                        target="_blank"
-                        title="GitHub"
-                        className="text-3xl"
-                      >
-                        <BsGithub />
-                      </Link>
-                    </li>
-                    <li className="social-li ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all">
-                      <Link
-                        href={
-                          "https://www.linkedin.com/in/aarya-chopkar-581aa2228"
-                        }
-                        target="_blank"
-                        title="LinkedIn"
-                        className="text-3xl"
-                      >
-                        <BsLinkedin />
-                      </Link>
-                    </li>
-                    <li className="social-li ml-4 hover:text-[#f1cf29] hover:rotate-12 transition-all">
-                      <Link
-                        href={"https://twitter.com/ChopkarAarya"}
-                        target="_blank"
-                        title="Twitter"
-                        className=" text-4xl"
-                      >
-                        𝕏
-                      </Link>
-                    </li> */}
-                {/* </ul> */}
                 <Link
                   href={
-                    "https://drive.google.com/file/d/14Bv9Klez1VvjaQGfGlwf7_A21aHMmuZC/view?usp=sharing"
+                    "https://drive.google.com/file/d/1igVgYldO3KHRqYPjukZB9Od8EUduv6be/view?usp=sharing"
                   }
                   target="_blank"
                   className=" w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 hover:scale-95 rounded-full transition-all"
