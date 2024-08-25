@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/accodes21/my-portfolio/master/preview.png"
+          content="https://raw.githubusercontent.com/accodes21/my-portfolio/master/newPreview.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Aarya Chopkar" />
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:image"
-          content="https://raw.githubusercontent.com/accodes21/my-portfolio/master/preview.png"
+          content="https://raw.githubusercontent.com/accodes21/my-portfolio/master/newPreview.png"
         />
         <meta
           property="twitter:url"
