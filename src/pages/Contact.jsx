@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_el9fwpc",
-        "template_6kn0ocl",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        "Rmu2c5afxXOLdi4H1"
+        process.env.NEXT_PUBLIC_EMAILJS_KEY
       )
       .then(
         (result) => {
@@ -56,18 +56,17 @@ const Contact = () => {
           >
             <P5Project />
           </motion.div>
-          <div className="contact-div container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3">
+          <motion.div
+            initial="hide"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={introHeaderVariants("right")}
+            className="contact-div container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3"
+          >
             <div className="container text-slate-800 md:px-12 relative">
               <div className="block rounded-xl mt-[-100px] bg-[#111] border border-solid border-[#f1cf29]/60  py-10 md:py-12 px-4 md:px-6">
                 <div>
-                  <motion.form
-                    ref={form}
-                    onSubmit={sendEmail}
-                    initial="hide"
-                    whileInView="show"
-                    viewport={{ once: true }}
-                    variants={introHeaderVariants("right")}
-                  >
+                  <form ref={form} onSubmit={sendEmail}>
                     <div className="mb-6">
                       <input
                         type="text"
@@ -110,11 +109,11 @@ const Contact = () => {
                       whileTap={{ scale: 0.7 }}
                       transition={{ type: "spring", stiffness: 50, damping: 6 }}
                     />
-                  </motion.form>
+                  </form>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.section>
     </AnimatePresence>
