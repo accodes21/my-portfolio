@@ -18,7 +18,7 @@ const About = () => {
               className="img-side relative pr-4"
             >
               <Image
-                className="rounded-3xl mt-2 rotate-12 z-0 absolute opacity-60"
+                className="rounded-3xl mt-2 rotate-12 z-0 absolute opacity-60 scale-95"
                 width={560}
                 height={480}
                 src="/aarya.jpg"

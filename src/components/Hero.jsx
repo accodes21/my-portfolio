@@ -78,9 +78,9 @@ const Hero = () => {
                     "https://drive.google.com/file/d/1igVgYldO3KHRqYPjukZB9Od8EUduv6be/view?usp=sharing"
                   }
                   target="_blank"
-                  className=" w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 hover:scale-95 rounded-full transition-all"
+                  className=" w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full hover:scale-95 transition-all"
                 >
-                  <span className="flex flex-col justify-between bg-[#111] text-white hover:bg-transparent hover:text-[#222] rounded-full p-4 transition-all">
+                  <span className="flex flex-col justify-between bg-[#111] text-white rounded-full p-4 hover:bg-transparent hover:text-[#222] transition-all">
                     My Resume
                   </span>
                 </Link>
