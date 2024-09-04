@@ -16,7 +16,7 @@ const Contact = () => {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_KEY
+        process.env.NEXT_PUBLIC_EMAILJS
       )
       .then(
         (result) => {
