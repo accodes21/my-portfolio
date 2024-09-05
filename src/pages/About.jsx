@@ -3,10 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { introHeaderVariants } from "@/app/framer";
+import AnimatedText from "@/components/AnimatedText";
 
 const About = () => {
   return (
     <AnimatePresence>
+      <motion.hr
+        initial="hide"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={introHeaderVariants("left")}
+        className="lg:h-px h-[1.8px] border-t-0 bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-100"
+      />
       <motion.section id="about" className="about bg-black p-36">
         <div className="container about-container pl-16 pr-16">
           <div className="content1 about-content grid items-center justify-center grid-cols-2">
@@ -45,27 +53,35 @@ const About = () => {
               <h3 className="about-sub text-2xl mb-6">
                 Software Developer based in India
               </h3>
-              <p className="text-[1.2rem] text-gray-300">
+              <div className="text-[1.2rem] text-gray-300">
                 As a{" "}
-                <span className="font-semibold underline decoration-[#f1cf29] decoration-2">
-                  Full-Stack Developer
-                </span>
+                <AnimatedText
+                  text="Full-Stack Developer"
+                  className="font-semibold underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={0.3}
+                />
                 , I have worked extensively on JavaScript, ReactJS, Tailwind,
                 and NextJS. I create websites with seamless UI/UX, specializing
                 in dynamic, engaging design through clean coding and modern
                 development tools.
                 <br />
                 Currently, I work as{" "}
-                <span className="font-semibold underline decoration-[#f1cf29] decoration-2">
-                  Frontend Developer Intern
-                </span>{" "}
+                <AnimatedText
+                  text="Frontend Developer Intern"
+                  className="font-semibold underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={0.1}
+                />{" "}
                 at{" "}
                 <Link
                   href={"https://supista.com"}
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  Supista
+                  <AnimatedText
+                    text="Supista"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>{" "}
                 handling various projects. Recently redeveloped the{" "}
                 <Link
@@ -73,9 +89,13 @@ const About = () => {
                     "https://play.google.com/store/apps/details?id=in.savantsolutions.phonevue"
                   }
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  PhoneVue
+                  <AnimatedText
+                    text="PhoneVue"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>{" "}
                 app and upgraded the Supista website.
                 <br />
@@ -85,9 +105,13 @@ const About = () => {
                     "https://mvp.microsoft.com/en-US/studentambassadors/profile/d3da8b9c-5bf5-4532-a54f-65ef45536e13"
                   }
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  Microsoft Learn Student Ambassador
+                  <AnimatedText
+                    text="Microsoft Learn Student Ambassador"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>
                 , I have guided several students for starting their
                 web-development journey. Also as Associate Tech Lead at{" "}
@@ -96,9 +120,13 @@ const About = () => {
                     "https://gdsc.community.dev/shri-mata-vaishno-devi-university-katra/"
                   }
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  GDSC SMVDU
+                  <AnimatedText
+                    text="GDSC SMVDU"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>
                 , I have hosted several tech events in my university.
                 <br />I am also an active contributor to various Open Source
@@ -106,28 +134,40 @@ const About = () => {
                 <Link
                   href={"https://github.com/EddieHubCommunity"}
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  EddieHub
+                  <AnimatedText
+                    text="EddieHub"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>
                 ,{" "}
                 <Link
                   href={"https://github.com/AskDevs"}
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  AskDevs
+                  <AnimatedText
+                    text="AskDevs"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>
                 ,{" "}
                 <Link
                   href={"https://gdg.community.dev/gdg-jammu/"}
                   target="_blank"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 hover:text-[#f1cf29]"
+                  className="font-semibold hover:text-[#f1cf29]"
                 >
-                  GDG Jammu
+                  <AnimatedText
+                    text="GDG Jammu"
+                    className="inline-block underline decoration-[#f1cf29] decoration-2"
+                    delay={0.1}
+                  />
                 </Link>{" "}
                 etc.
-              </p>
+              </div>
             </motion.div>
           </div>
         </div>
