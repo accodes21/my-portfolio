@@ -5,6 +5,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import SkillBadge from "./SkillBadge";
 import { motion, AnimatePresence } from "framer-motion";
 import { slideAnimation, introHeaderVariants } from "@/app/framer";
+import AnimatedText from "./AnimatedText";
 
 const socials = [
   {
@@ -51,7 +52,7 @@ const SocialLinks = () => {
 const Hero = () => {
   return (
     <AnimatePresence>
-      <motion.section className="bg-[#111] h-fit w-full">
+      <motion.section className="bg-[#111] h-fit md:h-screen w-full">
         <div className="content1 flex items-center justify-center h-[35em]">
           <div className="hero flex items-center justify-center relative gap-40">
             <motion.div
@@ -60,17 +61,19 @@ const Hero = () => {
             >
               <h1 className=" heading text-[4.8rem] leading-4 mb-[2rem] font-serif font-extrabold">
                 {" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-yellow-300 to-orange-600 bg-[length:200%_auto] animate-gradient">
                   AARYA
                 </span>
                 <br /> <br /> <br /> <br /> <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-red-500 to-purple-600 bg-[length:200%_auto] animate-gradient">
                   CHOPKAR
                 </span>
               </h1>
-              <p className="text-[1.2rem] leading-4 text-center mt-4">
-                Hi, I'm a Software Developer who brings ideas to life.
-              </p>
+              <AnimatedText
+                text="Hi, I'm a Software Developer who brings ideas to life."
+                className="text-[1.3rem] leading-4 text-center mt-4"
+                delay={0.2}
+              />
               <div className="flex flex-col">
                 <SocialLinks />
                 <Link
@@ -101,13 +104,6 @@ const Hero = () => {
         <div className="h-full">
           <SkillBadge />
         </div>
-        <motion.hr
-          initial="hide"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={introHeaderVariants("left")}
-          className="lg:h-px h-[1.8px] border-t-0 bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-100"
-        />
       </motion.section>
     </AnimatePresence>
   );
