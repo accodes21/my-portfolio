@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Aarya Chopkar",
+  title: "Aarya Chopkar - Software Developer",
   description: "Portfolio Website",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Aarya Chopkar" />
         <meta
           property="og:description"
-          content="Web Developer working on NextJS. Open Source buff who also loves python."
+          content="Full Stack Developer specializing in Next.js, Tailwind and Firebase, with expertise in Java, C++, and Python. Known for delivering seamless UI/UX, clean code, and dynamic web designs. Optimistic, dedicated, and committed to excellence."
         />
         <meta property="og:url" content="https://aaryachopkar.vercel.app/" />
         <meta property="og:type" content="website" />
