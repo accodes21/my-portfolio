@@ -6,6 +6,7 @@ import SkillBadge from "./SkillBadge";
 import { motion, AnimatePresence } from "framer-motion";
 import { slideAnimation, introHeaderVariants } from "@/app/framer";
 import AnimatedText from "./AnimatedText";
+import ScrambleText from "./ScrambleText";
 
 const socials = [
   {
@@ -61,13 +62,13 @@ const Hero = () => {
             >
               <h1 className=" heading text-[4.8rem] leading-4 mb-[2rem] font-serif font-extrabold">
                 {" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-yellow-300 to-orange-600 bg-[length:200%_auto] animate-gradient">
+                <ScrambleText className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-yellow-300 to-orange-600 bg-[length:200%_auto] animate-gradient">
                   AARYA
-                </span>
+                </ScrambleText>
                 <br /> <br /> <br /> <br /> <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-red-500 to-purple-600 bg-[length:200%_auto] animate-gradient">
+                <ScrambleText className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-red-500 to-purple-600 bg-[length:200%_auto] animate-gradient">
                   CHOPKAR
-                </span>
+                </ScrambleText>
               </h1>
               <AnimatedText
                 text="Hi, I'm a Software Developer who brings ideas to life."

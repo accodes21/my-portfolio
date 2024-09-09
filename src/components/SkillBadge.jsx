@@ -41,13 +41,12 @@ const SkillBadge = () => {
         <ul className="skill-list flex items-center">
           {skills?.map((skill, index) => (
             <motion.li
-              ref={ref}
               variants={skillVariants}
               key={index}
               className={`ml-4 transition-colors cursor-pointer`}
               style={{ "--tw-text-hover": skill.hoverColor }}
             >
-              <span className="hover:text-[var(--tw-text-hover)]">
+              <span ref={ref} className="hover:text-[var(--tw-text-hover)]">
                 {skill.icon}
               </span>
             </motion.li>
