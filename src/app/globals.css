@@ -137,6 +137,29 @@ body::-webkit-scrollbar-track{
   transform: scale(1.2);
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #111 20%,
+    transparent 21%,
+    transparent 49%,
+    #111 50%
+  );
+  background-size: 15px 15px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  font-size: 14px;
+  line-height: 14px;
+  z-index: 20;
+}
+
+
 @media screen and (max-width:500px) {
   html,body{
     width: 100%;

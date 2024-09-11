@@ -14,11 +14,11 @@ const Footer = () => {
       />
       <motion.footer
         {...slideAnimation("up")}
-        className="w-full text-center bg-[#111]"
+        className="w-full text-center py-3"
       >
-        <p className="py-3">
+        <span className="bg-black p-1 rounded-md">
           &copy; {new Date().getFullYear()} Aarya Chopkar. All rights reserved.
-        </p>
+        </span>
       </motion.footer>
     </AnimatePresence>
   );
