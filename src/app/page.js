@@ -68,7 +68,7 @@ export default function Home() {
         </svg>
       </div>
       <Header />
-      <main className="h-full w-full">
+      <main className="h-full w-full flex-1">
         <Hero />
         <About />
         <Projects />
