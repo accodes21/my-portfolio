@@ -28,7 +28,7 @@ const Projects = () => {
               key={project.title}
               title={project.title}
               image={project.image}
-              link={project.link}
+              link={project.projectLink}
               githubLink={project.githubLink}
               skills={project.skills}
             />
