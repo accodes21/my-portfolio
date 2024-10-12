@@ -56,3 +56,26 @@ export const introHeaderVariants = (direction) => {
     },
   };
 };
+
+export const projectVariants = {
+  hide: {
+    filter: "blur(10px)",
+    y: 200,
+    opacity: 0,
+    transition: {
+      ...transition,
+      duration: 1,
+    },
+  },
+  show: {
+    filter: "blur(0px)",
+    y: 0,
+    opacity: 1,
+    transition: {
+      ...transition,
+      duration: 1,
+      delay: 0.2,
+      ease: "easeInOut",
+    },
+  },
+};
