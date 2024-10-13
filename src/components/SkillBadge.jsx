@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-// import { slideAnimation, skillStagerVariants } from "@/app/framer";
 import skills from "@/data/skills";
 
 const SkillBadge = () => {
@@ -35,7 +34,7 @@ const SkillBadge = () => {
         animate={isInView ? "show" : "hidden"}
         className="skill-container flex pl-16 pr-16 pb-16 justify-center"
       >
-        <h2 className="heading2 text-[#f1cf29] font-bold text-3xl">
+        <h2 className="heading2 text-[#f1cf29] font-scotch font-bold text-3xl">
           Tech Stack |
         </h2>
         <ul className="skill-list flex items-center">

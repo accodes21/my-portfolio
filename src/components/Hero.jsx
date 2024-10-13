@@ -60,7 +60,7 @@ const Hero = () => {
               {...slideAnimation("left")}
               className="hero-text flex flex-col"
             >
-              <h1 className=" heading text-[4.8rem] leading-4 mb-[2rem] font-serif font-extrabold">
+              <h1 className=" heading text-[4.8rem] leading-4 mb-[2rem] font-scotch font-extrabold">
                 {" "}
                 <ScrambleText className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-yellow-300 to-orange-600 bg-[length:200%_auto] animate-gradient">
                   AARYA
@@ -72,7 +72,7 @@ const Hero = () => {
               </h1>
               <AnimatedText
                 text="Hi, I'm a Software Developer who brings ideas to life."
-                className="text-[1.3rem] leading-4 text-center mt-4"
+                className="text-[1.3rem] leading-4 text-center mt-4 font-scotchnormal"
                 delay={0.2}
               />
               <div className="flex flex-col">
@@ -84,7 +84,7 @@ const Hero = () => {
                   target="_blank"
                   className=" w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full hover:scale-95 transition-all"
                 >
-                  <span className="flex flex-col justify-between bg-[#111] text-white rounded-full p-4 hover:bg-transparent hover:text-[#222] transition-all">
+                  <span className="font-scotch flex flex-col justify-between bg-[#111] text-white rounded-full p-4 hover:bg-transparent hover:text-[#222] transition-all">
                     My Resume
                   </span>
                 </Link>

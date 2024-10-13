@@ -33,6 +33,10 @@ module.exports = {
           to: { "background-position": "200% center" },
         },
       },
+      fontFamily: {
+        scotch: ["Scotch", "sans"],
+        scotchnormal: ["Scotch-Normal", "sans"],
+      },
     },
   },
   plugins: [],

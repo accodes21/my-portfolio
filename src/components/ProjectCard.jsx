@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsGithub, BsLink } from "react-icons/bs";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { introHeaderVariants, projectVariants } from "@/app/framer";
+import { introHeaderVariants } from "@/app/framer";
 import Tilt from "react-parallax-tilt";
 
 const ProjectCard = ({ title, image, link, githubLink, skills }) => {
@@ -24,7 +24,7 @@ const ProjectCard = ({ title, image, link, githubLink, skills }) => {
           initial="hide"
           whileInView="show"
           viewport={{ once: true }}
-          variants={projectVariants}
+          variants={introHeaderVariants("up")}
           className="card m-4 rounded-xl"
         >
           <div className="content h-full w-full rounded-xl md:rounded-3xl">
@@ -51,7 +51,7 @@ const ProjectCard = ({ title, image, link, githubLink, skills }) => {
               </div>
             </div>
           </div>
-          <h2 className="text-2xl font-bold mt-3">{title}</h2>
+          <h2 className="text-2xl font-scotch font-bold mt-3">{title}</h2>
           <div className="mt-3 mb-6">
             <p className="text-small italic">{skills}</p>
           </div>

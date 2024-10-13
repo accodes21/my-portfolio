@@ -16,6 +16,16 @@
   }
 }
 
+@font-face {
+  font-family: "Scotch";
+  src: url("/Scotch.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Scotch-Normal";
+  src: url("/Scotch-Normal.otf") format('opentype');
+}
+
 *{
   margin: 0;
   padding: 0;

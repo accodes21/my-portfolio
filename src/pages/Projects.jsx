@@ -15,7 +15,7 @@ const Projects = () => {
           viewport={{ once: true }}
           variants={introHeaderVariants("left")}
         >
-          <h1 className="text-[#f1cf29] mb-6 font-bold text-3xl font-sans">
+          <h1 className="text-[#f1cf29] mb-2 font-scotch font-bold text-3xl">
             PROJECTS
           </h1>
           <h1 className="text-xl mb-6">
@@ -44,7 +44,7 @@ const Projects = () => {
           <Link
             href={"https://github.com/accodes21?tab=repositories"}
             target="_blank"
-            className="text-center lg:text-lg text-sm p-4 bg-black rounded-full border border-[#f1cf29]/60 hover:bg-gradient-to-r from-yellow-400 to-orange-500 hover:text-black transition-all"
+            className="font-scotchnormal text-center lg:text-lg text-sm p-4 bg-black rounded-full border border-[#f1cf29]/60 hover:bg-gradient-to-r from-yellow-400 to-orange-500 hover:text-black transition-all"
           >
             More Projects
           </Link>

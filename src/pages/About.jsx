@@ -47,17 +47,17 @@ const About = () => {
               variants={introHeaderVariants("right")}
               className="text-side lg:pl-10"
             >
-              <h2 className="about-head text-[#f1cf29] font-bold text-3xl font-sans">
+              <h2 className="about-head text-[#f1cf29] font-scotch font-bold text-3xl">
                 ABOUT ME
               </h2>
-              <h3 className="about-sub text-2xl mb-6">
+              <h3 className="font-scotch about-sub text-2xl mb-6">
                 Software Developer based in India
               </h3>
               <div className="text-[1.2rem] text-gray-300">
                 As a{" "}
                 <AnimatedText
                   text="Full-Stack Developer"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 inline-block"
+                  className="font-semibold font-scotchnormal underline decoration-[#f1cf29] decoration-2 inline-block"
                   delay={0.3}
                 />
                 , I have worked extensively on JavaScript, ReactJS, Tailwind,
@@ -68,14 +68,14 @@ const About = () => {
                 Currently, I work as{" "}
                 <AnimatedText
                   text="Frontend Developer Intern"
-                  className="font-semibold underline decoration-[#f1cf29] decoration-2 inline-block"
+                  className="font-semibold font-scotchnormal underline decoration-[#f1cf29] decoration-2 inline-block"
                   delay={0.1}
                 />{" "}
                 at{" "}
                 <Link
                   href={"https://supista.com"}
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="Supista"
@@ -89,7 +89,7 @@ const About = () => {
                     "https://play.google.com/store/apps/details?id=in.savantsolutions.phonevue"
                   }
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="PhoneVue"
@@ -105,7 +105,7 @@ const About = () => {
                     "https://mvp.microsoft.com/en-US/studentambassadors/profile/d3da8b9c-5bf5-4532-a54f-65ef45536e13"
                   }
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="Microsoft Learn Student Ambassador"
@@ -120,7 +120,7 @@ const About = () => {
                     "https://gdsc.community.dev/shri-mata-vaishno-devi-university-katra/"
                   }
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="GDSC SMVDU"
@@ -134,31 +134,29 @@ const About = () => {
                 <Link
                   href={"https://github.com/EddieHubCommunity"}
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
-                    text="EddieHub"
+                    text="EddieHub,"
                     className="inline-block underline decoration-[#f1cf29] decoration-2"
                     delay={0.1}
                   />
-                </Link>
-                ,{" "}
+                </Link>{" "}
                 <Link
                   href={"https://github.com/AskDevs"}
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
-                    text="AskDevs"
+                    text="AskDevs,"
                     className="inline-block underline decoration-[#f1cf29] decoration-2"
                     delay={0.1}
                   />
-                </Link>
-                ,{" "}
+                </Link>{" "}
                 <Link
                   href={"https://gdg.community.dev/gdg-jammu/"}
                   target="_blank"
-                  className="font-semibold hover:text-[#f1cf29]"
+                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="GDG Jammu"
