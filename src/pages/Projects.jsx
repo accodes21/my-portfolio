@@ -18,7 +18,7 @@ const Projects = () => {
           <h1 className="text-[#f1cf29] mb-2 font-scotch font-bold text-3xl">
             PROJECTS
           </h1>
-          <h1 className="text-xl mb-6">
+          <h1 className="font-lora text-xl mb-6">
             Creative projects which helped me mastering development.
           </h1>
         </motion.div>
@@ -44,7 +44,7 @@ const Projects = () => {
           <Link
             href={"https://github.com/accodes21?tab=repositories"}
             target="_blank"
-            className="font-scotchnormal text-center lg:text-lg text-sm p-4 bg-black rounded-full border border-[#f1cf29]/60 hover:bg-gradient-to-r from-yellow-400 to-orange-500 hover:text-black transition-all"
+            className="font-lora font-medium text-center lg:text-lg text-sm p-4 bg-black rounded-full border border-[#f1cf29]/60 hover:bg-gradient-to-r from-yellow-400 to-orange-500 hover:text-black transition-all"
           >
             More Projects
           </Link>

@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <AnimatePresence>
       <motion.header {...slideAnimation("down")} className="w-full">
-        <nav className='font-scotchnormal fixed z-50 cursor-pointer flex-row items-center  overflow-hidden rounded-full border px-1 py-4 shadow-xl backdrop-blur-sm backdrop-filter border-[#f1cf29]/60 bg-black bg-opacity-60 lg:left-1/2 lg:flex lg:-translate-x-1/2 lg:transform mt-4 top-8"'>
+        <nav className='font-lora fixed z-50 cursor-pointer flex-row items-center  overflow-hidden rounded-full border px-1 py-4 shadow-xl backdrop-blur-sm backdrop-filter border-[#f1cf29]/60 bg-black bg-opacity-60 lg:left-1/2 lg:flex lg:-translate-x-1/2 lg:transform mt-4 top-8"'>
           <motion.ul
             {...introHeaderVariants("left")}
             className="flex justify-end pr-4 text-lg"

@@ -14,7 +14,7 @@ const Footer = () => {
       />
       <motion.footer
         {...slideAnimation("up")}
-        className="w-full text-center py-3 font-scotchnormal"
+        className="w-full text-center py-3 font-lora"
       >
         <span className="bg-black p-1 rounded-md">
           &copy; {new Date().getFullYear()} Aarya Chopkar. All rights reserved.

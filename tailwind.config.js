@@ -34,8 +34,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        scotch: ["Scotch", "sans"],
-        scotchnormal: ["Scotch-Normal", "sans"],
+        scotch: ["Scotch", "serif"],
+        scotchnormal: ["Scotch-Normal", "serif"],
+        lora: ["Lora", "serif"],
       },
     },
   },
