@@ -43,7 +43,7 @@ const Contact = () => {
           <h1 className="text-[#f1cf29] font-scotch font-bold text-3xl mb-2">
             CONTACT ME
           </h1>
-          <h1 className="text-xl mb-6">
+          <h1 className="font-lora text-xl mb-6">
             Let's collaborate and make creative products.
           </h1>
         </motion.div>
@@ -105,7 +105,7 @@ const Contact = () => {
                       type="submit"
                       value={submitted ? "Thank You" : "Send"}
                       disabled={submitted}
-                      className="font-scotch w-auto px-6 py-2.5 bg-gray-800 rounded-md text-zinc-200 font-semibold text-sm leading-snug uppercase shadow-md border border-solid border-zinc-500 hover:bg-[#f1cf29] hover:text-[#222] hover:border-transparent hover:shadow-lg focus:shadow-lg focus:outline-none cursor-pointer focus:ring-0 active:bg-[#f1cf29] active:shadow-lg transition-all"
+                      className="font-lora w-auto px-6 py-2.5 bg-gray-800 rounded-md text-zinc-200 font-semibold text-sm leading-snug uppercase shadow-md border border-solid border-zinc-500 hover:bg-[#f1cf29] hover:text-[#222] hover:border-transparent hover:shadow-lg focus:shadow-lg focus:outline-none cursor-pointer focus:ring-0 active:bg-[#f1cf29] active:shadow-lg transition-all"
                       whileTap={{ scale: 0.7 }}
                       transition={{ type: "spring", stiffness: 50, damping: 6 }}
                     />

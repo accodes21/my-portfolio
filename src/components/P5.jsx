@@ -40,17 +40,25 @@ export default function P5Project() {
     }, 750);
   };
   return (
-    <div
-      className="cursor-pointer p-1 rounded-md border border-black hover:border hover:border-[#f1cf29]/60  transition-all"
-      onClick={handleChoiceChange}
-    >
-      {loading ? (
-        <div className="text-xl flex justify-center items-center w-[300px] h-[300px]">
-          Loading...
-        </div>
-      ) : (
-        components[choice]
-      )}
+    <div className="flex flex-col">
+      <div
+        className="cursor-pointer p-1 rounded-md border border-black hover:border hover:border-[#f1cf29]/60  transition-all"
+        onClick={handleChoiceChange}
+      >
+        {loading ? (
+          <div className="text-xl flex justify-center items-center w-[300px] h-[300px]">
+            Loading...
+          </div>
+        ) : (
+          components[choice]
+        )}
+      </div>
+      <p
+        className="text-center text-sm cursor-pointer text-slate-300 hover:text-slate-100 transition-colors"
+        onClick={handleChoiceChange}
+      >
+        Click to explore more
+      </p>
     </div>
   );
 }
