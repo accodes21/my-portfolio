@@ -50,32 +50,31 @@ const About = () => {
               <h2 className="about-head text-[#f1cf29] font-scotch font-bold text-3xl">
                 ABOUT ME
               </h2>
-              <h3 className="font-scotch about-sub text-2xl mb-6">
+              <h3 className="font-lora about-sub text-2xl mb-6">
                 Software Developer based in India
               </h3>
-              <div className="text-[1.2rem] text-gray-300">
+              <article className="text-[1.2rem] text-gray-300">
                 As a{" "}
                 <AnimatedText
                   text="Full-Stack Developer"
-                  className="font-semibold font-scotchnormal underline decoration-[#f1cf29] decoration-2 inline-block"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
                   delay={0.3}
                 />
                 , I have worked extensively on JavaScript, ReactJS, Tailwind,
-                and NextJS. I create websites with seamless UI/UX, specializing
-                in dynamic, engaging design through clean coding and modern
-                development tools.
+                and NextJS, focusing on creating dynamic websites with seamless
+                UI/UX through modern development tools.
                 <br />
                 Currently, I work as{" "}
                 <AnimatedText
                   text="Frontend Developer Intern"
-                  className="font-semibold font-scotchnormal underline decoration-[#f1cf29] decoration-2 inline-block"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
                   delay={0.1}
                 />{" "}
                 at{" "}
                 <Link
                   href={"https://supista.com"}
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="Supista"
@@ -83,13 +82,13 @@ const About = () => {
                     delay={0.1}
                   />
                 </Link>{" "}
-                handling various projects. Recently redeveloped the{" "}
+                where, I recently redeveloped the{" "}
                 <Link
                   href={
                     "https://play.google.com/store/apps/details?id=in.savantsolutions.phonevue"
                   }
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="PhoneVue"
@@ -105,7 +104,7 @@ const About = () => {
                     "https://mvp.microsoft.com/en-US/studentambassadors/profile/d3da8b9c-5bf5-4532-a54f-65ef45536e13"
                   }
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="Microsoft Learn Student Ambassador"
@@ -113,14 +112,14 @@ const About = () => {
                     delay={0.1}
                   />
                 </Link>
-                , I have guided several students for starting their
-                web-development journey. Also as Associate Tech Lead at{" "}
+                , I guide students in their web development journeys, and as
+                Associate Tech Lead at{" "}
                 <Link
                   href={
                     "https://gdsc.community.dev/shri-mata-vaishno-devi-university-katra/"
                   }
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="GDSC SMVDU"
@@ -128,13 +127,13 @@ const About = () => {
                     delay={0.1}
                   />
                 </Link>
-                , I have hosted several tech events in my university.
-                <br />I am also an active contributor to various Open Source
-                projects. I am a member of various Tech Communities including{" "}
+                , I host tech events in my university.
+                <br /> I actively contribute to various Open Source projects and
+                engage with tech communities, including{" "}
                 <Link
                   href={"https://github.com/EddieHubCommunity"}
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="EddieHub,"
@@ -145,7 +144,7 @@ const About = () => {
                 <Link
                   href={"https://github.com/AskDevs"}
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="AskDevs,"
@@ -156,7 +155,7 @@ const About = () => {
                 <Link
                   href={"https://gdg.community.dev/gdg-jammu/"}
                   target="_blank"
-                  className="font-semibold font-scotchnormal hover:text-[#f1cf29]"
+                  className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
                     text="GDG Jammu"
@@ -165,7 +164,7 @@ const About = () => {
                   />
                 </Link>{" "}
                 etc.
-              </div>
+              </article>
             </motion.div>
           </div>
         </div>
