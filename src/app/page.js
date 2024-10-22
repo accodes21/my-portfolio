@@ -1,6 +1,6 @@
 "use client";
-import { Footer, Header, Hero, Loader } from "@/components/exports";
-import { About, Contact, Projects } from "@/pages/exports";
+import { Footer, Header, Hero, Loader } from "@/data/exports";
+import { About, Contact, Projects } from "@/data/exports";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 

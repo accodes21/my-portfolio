@@ -1,0 +1,12 @@
+export { default as About } from "../pages/About";
+export { default as Contact } from "../pages/Contact";
+export { default as Projects } from "../pages/Projects";
+export { default as AnimatedText } from "../components/AnimatedText";
+export { default as Footer } from "../components/Footer";
+export { default as Header } from "../components/Header";
+export { default as Hero } from "../components/Hero";
+export { default as Loader } from "../components/Loader";
+export { default as P5Project } from "../components/P5";
+export { default as ProjectCard } from "../components/ProjectCard";
+export { default as ScrambleText } from "../components/ScrambleText";
+export { default as SkillBadge } from "../components/SkillBadge";

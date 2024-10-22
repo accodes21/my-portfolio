@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/ProjectCard";
+import { ProjectCard } from "@/data/exports";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { introHeaderVariants } from "@/app/framer";

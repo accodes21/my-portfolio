@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { introHeaderVariants } from "@/app/framer";
-import AnimatedText from "@/components/AnimatedText";
+import { AnimatedText } from "@/data/exports";
 
 const About = () => {
   return (

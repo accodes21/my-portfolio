@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { introHeaderVariants } from "@/app/framer";
 import emailjs from "@emailjs/browser";
-import P5Project from "@/components/P5";
+import { P5Project } from "@/data/exports";
 
 const Contact = () => {
   const form = useRef();

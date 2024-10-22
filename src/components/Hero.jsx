@@ -2,11 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import SkillBadge from "./SkillBadge";
 import { motion, AnimatePresence } from "framer-motion";
-import { slideAnimation, introHeaderVariants } from "@/app/framer";
-import AnimatedText from "./AnimatedText";
-import ScrambleText from "./ScrambleText";
+import { slideAnimation } from "@/app/framer";
+import { ScrambleText, SkillBadge, AnimatedText } from "@/data/exports";
 
 const socials = [
   {
