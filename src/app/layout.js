@@ -42,6 +42,20 @@ export default function RootLayout({ children }) {
           property="twitter:url"
           content="https://aaryachopkar.vercel.app/"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicons/favicon-48x48.png"
+          sizes="48x48"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/favicons/site.webmanifest" />
       </head>
       <body className={inter.className}>
         {children} <Analytics />

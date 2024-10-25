@@ -32,13 +32,15 @@ const Header = () => {
             className="flex justify-end pr-4 text-lg"
           >
             {links?.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                className="ml-4 text-white hover:text-yellow-400 transition-colors"
-              >
-                {link.label}
-              </Link>
+              <li>
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="ml-4 text-white hover:text-yellow-400 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
             ))}
           </motion.ul>
         </nav>
