@@ -19,12 +19,12 @@
 
 @font-face {
   font-family: "Scotch";
-  src: url("/Scotch.otf") format('opentype');
+  src: url("/fonts/Scotch.otf") format('opentype');
 }
 
 @font-face {
   font-family: "Scotch-Normal";
-  src: url("/Scotch-Normal.otf") format('opentype');
+  src: url("/fonts/Scotch-Normal.otf") format('opentype');
 }
 
 *{
@@ -173,6 +173,57 @@ footer {
   z-index: 20;
 }
 
+.slider{
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5% 95%,
+      transparent
+  );
+}
+
+.list{
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider .list .item{
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear  infinite;
+  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+.item img{
+  width: 100%;
+}
+
+.slider:hover .item{
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+.slider .item:hover{
+  filter: grayscale(0);
+}
+
+@keyframes autoRun {
+  from{
+      left: 100%;
+  }
+  to{
+      left: calc(var(--width) * -1);
+  }
+}
 
 @media screen and (max-width:500px) {
   html,body{
