@@ -7,11 +7,11 @@ const projects = [
     skills: "ReactJS, ThreeJS, Tailwind CSS, OpenAI",
   },
   {
-    title: "YouTube 2.0",
-    image: "yt.png",
-    githubLink: "YouTube-Clone",
-    projectLink: "https://youtube-clone-accodes21.vercel.app/",
-    skills: "ReactJS, Material UI, YouTube-API",
+    title: "GitHub Card",
+    image: "github-card.png",
+    githubLink: "github-card",
+    projectLink: "https://github-card-pink-mu.vercel.app/",
+    skills: "NextJS, TypeScript, Tailwind CSS, GitHub-API",
   },
   {
     title: "Movie-Mania",
