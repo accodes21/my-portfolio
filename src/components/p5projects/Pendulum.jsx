@@ -36,15 +36,19 @@ export default function Pendulum() {
     a2 = p5.PI / 2;
     cx = 150;
     cy = 100;
-    buffer = p5.createGraphics(p5.width, p5.height);
+
+    // Create buffer after canvas dimensions are set
+    buffer = p5.createGraphics(300, 300);
     buffer.background(0);
-    buffer.translate(cx, cy);
   };
 
   const draw = (p5) => {
+    // Safety check
+    if (!buffer) return;
+
     p5.background(255);
     p5.imageMode(p5.CORNER);
-    p5.image(buffer, 0, 0, p5.width, p5.height);
+    p5.image(buffer, 0, 0, 300, 300);
 
     let num1 = -g * (2 * m1 + m2) * p5.sin(a1);
     let num2 = -m2 * g * p5.sin(a1 - 2 * a2);
@@ -69,6 +73,7 @@ export default function Pendulum() {
 
     let x2 = x1 + r2 * p5.sin(a2);
     let y2 = y1 + r2 * p5.cos(a2);
+
     p5.strokeWeight(2);
     p5.line(0, 0, x1, y1);
     p5.fill(0);
@@ -83,11 +88,13 @@ export default function Pendulum() {
     a1 += a1_v;
     a2 += a2_v;
 
-    buffer.stroke(241, 207, 41);
+    // Draw trail on buffer
     if (p5.frameCount > 1) {
-      p5.stroke(241, 207, 41);
-      p5.strokeWeight(0.5);
+      buffer.stroke(241, 207, 41);
+      buffer.strokeWeight(0.5);
+      buffer.translate(cx, cy);
       buffer.line(px2, py2, x2, y2);
+      buffer.translate(-cx, -cy);
     }
 
     px2 = x2;

@@ -6,12 +6,12 @@ import { introHeaderVariants, slideAnimation } from "@/app/framer";
 const Header = () => {
   const links = [
     {
-      href: "/",
-      label: "Home",
-    },
-    {
       href: "#about",
       label: "About",
+    },
+    {
+      href: "#experience",
+      label: "Experience",
     },
     {
       href: "#projects",
@@ -36,7 +36,7 @@ const Header = () => {
                 <Link
                   key={index}
                   href={link.href}
-                  className="ml-4 text-white hover:text-yellow-400 transition-colors"
+                  className="ml-2 md:ml-4 text-white hover:text-yellow-400 transition-colors"
                 >
                   {link.label}
                 </Link>

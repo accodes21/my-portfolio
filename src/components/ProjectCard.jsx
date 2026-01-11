@@ -29,7 +29,7 @@ const ProjectCard = ({ title, image, link, githubLink, skills }) => {
         >
           <div className="content h-full w-full rounded-xl md:rounded-3xl">
             <Image
-              src={`/${image}`}
+              src={`/images/projects/${image}`}
               alt={title}
               width={1000}
               height={500}

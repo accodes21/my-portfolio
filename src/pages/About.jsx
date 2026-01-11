@@ -15,9 +15,11 @@ const About = () => {
         variants={introHeaderVariants("left")}
         className="lg:h-px h-[1.8px] border-t-0 bg-gradient-to-r from-transparent via-[#f1cf29] to-transparent opacity-100"
       />
+
       <motion.section id="about" className="about bg-black p-36">
         <div className="container about-container pl-16 pr-16">
           <div className="content1 about-content grid items-center justify-center grid-cols-2">
+            {/* Image Side */}
             <motion.div
               initial="hide"
               whileInView="show"
@@ -40,6 +42,8 @@ const About = () => {
                 alt="My profile photo"
               />
             </motion.div>
+
+            {/* Text Side */}
             <motion.div
               initial="hide"
               whileInView="show"
@@ -51,69 +55,47 @@ const About = () => {
                 ABOUT ME
               </h2>
               <h3 className="font-lora about-sub text-2xl mb-6">
-                Software Developer based in India
+                Full-Stack Developer who argues with JavaScript daily
               </h3>
+
               <article className="text-[1.2rem] text-gray-300">
-                As a{" "}
+                Hi, I’m Aarya 👋 I spend most of my time working on{" "}
                 <AnimatedText
-                  text="Full-Stack Developer"
-                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
-                  delay={0.3}
-                />
-                , I have worked extensively on JavaScript, ReactJS, Tailwind,
-                and NextJS, focusing on creating dynamic websites with seamless
-                UI/UX through modern development tools.
-                <br />
-                Currently, I work as{" "}
-                <AnimatedText
-                  text="Frontend Developer Intern"
+                  text="JavaScript"
                   className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
                   delay={0.1}
                 />{" "}
-                at{" "}
-                <Link
-                  href={"https://supista.com"}
-                  target="_blank"
-                  className="font-semibold font-lora hover:text-[#f1cf29]"
-                >
-                  <AnimatedText
-                    text="Supista"
-                    className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
-                  />
-                </Link>{" "}
-                where, I recently redeveloped the{" "}
-                <Link
-                  href={
-                    "https://play.google.com/store/apps/details?id=in.savantsolutions.phonevue"
-                  }
-                  target="_blank"
-                  className="font-semibold font-lora hover:text-[#f1cf29]"
-                >
-                  <AnimatedText
-                    text="PhoneVue"
-                    className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
-                  />
-                </Link>{" "}
-                app and upgraded the Supista website.
+                and{" "}
+                <AnimatedText
+                  text="React"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={0.2}
+                />{" "}
+                to stop re-rendering unnecessarily.
+                <br />I work with{" "}
+                <AnimatedText
+                  text="React, NextJS, and Tailwind"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={0.3}
+                />{" "}
+                to build websites and apps that (hopefully) make sense to humans
+                <span className="text-gray-400"> and machines</span>.
                 <br />
-                As a{" "}
+                I’ve been part of{" "}
                 <Link
                   href={
-                    "https://mvp.microsoft.com/en-US/studentambassadors/profile/d3da8b9c-5bf5-4532-a54f-65ef45536e13"
+                    "https://www.linkedin.com/posts/aarya-chopkar-581aa2228_community-microsoft-mlsa-activity-7166418950392627200-qTth?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkdMrEBTJkg71gDiuL6grkZJC3O8xEVvmg"
                   }
                   target="_blank"
                   className="font-semibold font-lora hover:text-[#f1cf29]"
                 >
                   <AnimatedText
-                    text="Microsoft Learn Student Ambassador"
+                    text="Microsoft Learn Student Ambassadors"
                     className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
+                    delay={0.6}
                   />
-                </Link>
-                , I guide students in their web development journeys, and as
-                Associate Tech Lead at{" "}
+                </Link>{" "}
+                and{" "}
                 <Link
                   href={
                     "https://gdsc.community.dev/shri-mata-vaishno-devi-university-katra/"
@@ -124,51 +106,37 @@ const About = () => {
                   <AnimatedText
                     text="GDSC SMVDU"
                     className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
+                    delay={0.7}
                   />
                 </Link>
-                , I host tech events in my university.
-                <br /> I actively contribute to various Open Source projects and
-                engage with tech communities, including{" "}
-                <Link
-                  href={"https://github.com/EddieHubCommunity"}
-                  target="_blank"
-                  className="font-semibold font-lora hover:text-[#f1cf29]"
-                >
-                  <AnimatedText
-                    text="EddieHub,"
-                    className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
-                  />
-                </Link>{" "}
-                <Link
-                  href={"https://github.com/AskDevs"}
-                  target="_blank"
-                  className="font-semibold font-lora hover:text-[#f1cf29]"
-                >
-                  <AnimatedText
-                    text="AskDevs,"
-                    className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
-                  />
-                </Link>{" "}
-                <Link
-                  href={"https://gdg.community.dev/gdg-jammu/"}
-                  target="_blank"
-                  className="font-semibold font-lora hover:text-[#f1cf29]"
-                >
-                  <AnimatedText
-                    text="GDG Jammu"
-                    className="inline-block underline decoration-[#f1cf29] decoration-2"
-                    delay={0.1}
-                  />
-                </Link>{" "}
-                etc.
+                , which basically means I hosted events, and answered too many
+                GitHub questions.
+                <br />
+                When I’m not coding, you’ll probably find me on a{" "}
+                <AnimatedText
+                  text="badminton court"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={0.8}
+                />
+                ,{" "}
+                <AnimatedText
+                  text="swimming laps"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={0.9}
+                />
+                , or behind a{" "}
+                <AnimatedText
+                  text="camera"
+                  className="font-semibold font-lora underline decoration-[#f1cf29] decoration-2 inline-block"
+                  delay={1.0}
+                />{" "}
+                capturing sunsets.
               </article>
             </motion.div>
           </div>
         </div>
       </motion.section>
+
       <motion.hr
         initial="hide"
         whileInView="show"

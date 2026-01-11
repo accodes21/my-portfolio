@@ -1,36 +1,58 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { HiMail } from "react-icons/hi";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { IoSend } from "react-icons/io5";
 import { introHeaderVariants } from "@/app/framer";
-import emailjs from "@emailjs/browser";
 import { P5Project } from "@/data/exports";
 
 const Contact = () => {
-  const form = useRef();
-  const [submitted, setSubmitted] = useState(false);
+  const socialLinks = [
+    {
+      name: "Email",
+      icon: <HiMail className="w-8 h-8 text-[#f1cf29]" />,
+      href: "mailto:aaryachopkar@gmail.com",
+      label: "aaryachopkar@gmail.com",
+      color: "hover:bg-[#f1cf29]",
+    },
+    {
+      name: "Twitter",
+      icon: "𝕏",
+      href: "https://twitter.com/ChopkarAarya",
+      label: "@ChopkarAarya",
+      color: "hover:bg-[#f1cf29]",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin className="w-8 h-8 text-[#f1cf29]" />,
+      href: "https://www.linkedin.com/in/aarya-chopkar-581aa2228",
+      label: "Aarya Chopkar",
+      color: "hover:bg-[#f1cf29]",
+    },
+  ];
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_EMAILJS
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-          console.log("error");
-        }
-      );
-
-    setSubmitted(true);
+  const containerVariants = {
+    hide: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
   };
+
+  const itemVariants = {
+    hide: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <AnimatePresence>
       <motion.section id="contact" className="contact bg-[#000] p-32">
@@ -47,7 +69,7 @@ const Contact = () => {
             Let's collaborate and make creative products.
           </h1>
         </motion.div>
-        <div className="flex flex-col justify-center items-center md:flex-row gap-4">
+        <div className="flex flex-col justify-center items-center gap-4">
           <motion.div
             initial="hide"
             whileInView="show"
@@ -60,61 +82,55 @@ const Contact = () => {
             initial="hide"
             whileInView="show"
             viewport={{ once: true }}
-            variants={introHeaderVariants("right")}
-            className="contact-div container mt-4 md:mt-32 px-6 mx-auto lg:w-2/3"
+            variants={containerVariants}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full"
           >
-            <div className="container text-slate-800 md:px-12 relative">
-              <div className="block rounded-xl mt-[-100px] bg-[#111] border border-solid border-[#f1cf29]/60  py-10 md:py-12 px-4 md:px-6">
-                <div>
-                  <form ref={form} onSubmit={sendEmail}>
-                    <div className="mb-6">
-                      <input
-                        type="text"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-zinc-200 bg-slate-800 bg-clip-padding border border-solid border-zinc-500 rounded transition ease-in-out m-0 focus:text-zinc-200 focus:border-yellow-500 focus:outline-none"
-                        id="user_name"
-                        name="user_name"
-                        placeholder="What is your Name?"
-                        required
-                        autoComplete="on"
-                      />
+            {socialLinks.map((social) => {
+              const Icon = social.icon;
+              return (
+                <motion.a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className={`group relative bg-[#111] border border-[#f1cf29]/60 rounded-xl p-8 transition-all duration-300 hover:border-[#f1cf29] hover:shadow-lg hover:shadow-[#f1cf29]/20`}
+                >
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="w-16 h-16 rounded-full bg-black text-[#f1cf29] text-2xl flex items-center justify-center group-hover:bg-[#222] transition-colors">
+                      {social.icon}
                     </div>
-                    <div className="mb-6">
-                      <input
-                        type="email"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-zinc-200 bg-slate-800 bg-clip-padding border border-solid border-zinc-500 rounded transition ease-in-out m-0 focus:text-zinc-200 focus:border-yellow-500 focus:outline-none"
-                        id="user_email"
-                        name="user_email"
-                        placeholder="What is your Email?"
-                        required
-                        autoComplete="on"
-                      />
+                    <div>
+                      <h3 className="text-zinc-100 font-semibold text-lg mb-2">
+                        {social.name}
+                      </h3>
+                      <p className="text-zinc-400 transition-colors">
+                        {social.label}
+                      </p>
                     </div>
-                    <div className="mb-6">
-                      <textarea
-                        name="message"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-zinc-200 bg-gray-800 bg-clip-padding border border-solid border-zinc-500 rounded transition ease-in-out m-0 focus:text-zinc-200 focus:border-yellow-500 focus:outline-none"
-                        id="message"
-                        cols="8"
-                        rows="6"
-                        placeholder="Write a Message..."
-                        autoComplete="off"
-                        required
-                      ></textarea>
+                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <IoSend className="w-5 h-5 text-[#f1cf29]" />
                     </div>
-                    <motion.input
-                      type="submit"
-                      value={submitted ? "Thank You" : "Send"}
-                      disabled={submitted}
-                      className="font-lora w-auto px-6 py-2.5 bg-gray-800 rounded-md text-zinc-200 font-semibold text-sm leading-snug uppercase shadow-md border border-solid border-zinc-500 hover:bg-[#f1cf29] hover:text-[#222] hover:border-transparent hover:shadow-lg focus:shadow-lg focus:outline-none cursor-pointer focus:ring-0 active:bg-[#f1cf29] active:shadow-lg transition-all"
-                      whileTap={{ scale: 0.7 }}
-                      transition={{ type: "spring", stiffness: 50, damping: 6 }}
-                    />
-                  </form>
-                </div>
-              </div>
-            </div>
+                  </div>
+                </motion.a>
+              );
+            })}
           </motion.div>
         </div>
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={introHeaderVariants("up")}
+          className="text-center mt-6"
+        >
+          <p className="font-lora text-zinc-500 text-sm">
+            Open to new opportunities • Available for collaborations • Let's
+            build something great together
+          </p>
+        </motion.div>
       </motion.section>
     </AnimatePresence>
   );

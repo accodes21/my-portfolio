@@ -70,14 +70,14 @@ const Hero = () => {
               </h1>
               <AnimatedText
                 text="Hi, I'm a Software Developer who brings ideas to life."
-                className="text-[1.3rem] leading-[1.1em] text-center mt-2 font-lora"
+                className="text-[1.3rem] leading-[1.1em] text-center mt-2 font-lora px-2 md:px-0"
                 delay={0.2}
               />
               <div className="flex flex-col">
                 <SocialLinks />
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1igVgYldO3KHRqYPjukZB9Od8EUduv6be/view?usp=sharing"
+                    "https://drive.google.com/file/d/1YFE5NQXB78e2xri3ROzoDelva2ZWTQTl/view?usp=sharing"
                   }
                   target="_blank"
                   className=" w-fit lg:mx-0 mx-auto mb-4 font-medium lg:text-lg text-sm text-[#222] p-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full hover:scale-95 transition-all"
